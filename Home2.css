@@ -1,0 +1,68 @@
+
+
+
+@media screen and (min-width: 502px){
+
+.tag{
+	height: 100%; width: 3%;display: inline-block;
+}
+
+.social{
+	text-align: right; height: 100%; width: 100%; position: absolute; top: -25%; display: block; right: 10%; 
+}
+
+.footer{
+	position: fixed; bottom: 1%; left: 5%; height: 4%; display: block; border: solid 0px blue; width: 100%; background-color: #f3f3f3; z-index: 5;
+}
+
+.main{
+	position: fixed; height: 82%; width: 90%; left: 5%; top: 11%; display: block; border: solid 0px black; z-index: 3;
+}
+
+.menu_item{
+	position: relative; text-align: center; padding: 1%;  min-width: 10%; height: 100%; display: inline-block; border: solid 0px blue;padding-top: 3%;
+}
+
+.menu{
+	position: absolute; top: 0%; right: 5%; height: 100%; width : 50%; background-color: #f3f3f3; text-align: right; border: solid 0px red;
+}
+
+.Imagex{
+	text-align: left; position: absolute; height: 100%; width: 20%; left: 5%; top: 0%; background-size: 100% 100%;
+}
+
+.Image{
+	text-align: left; position: absolute; height: 100%; width: 20%; left: 5%; top: 0%; background-size: 100% 100%;
+}
+
+.image{
+	display: inline-block; height: 100%; width: 100%; background-size: 100% 100%;
+}
+
+.image2{
+	 height: 100%; width: 100%; display: none;	background-size: 100% 100%;
+}
+
+.header{
+	position: fixed; top: 2%; height: 8%; display: block; border: solid 0px blue; width: 99%; background-color: #f3f3f3; z-index: 5;	
+}
+
+
+}
+
+@media screen and (orientation:landscape) and (max-height: 501) {
+
+}
+
+
+
+
+@media (max-width: 501){
+	.footer{
+		font-size: 0.2em;
+	}  
+	.body{
+	    font-size: 12px;
+    	line-height: 1;
+	}
+}

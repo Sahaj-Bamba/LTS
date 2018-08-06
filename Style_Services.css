@@ -1,0 +1,37 @@
+body {
+	background-color: #888;
+}
+
+.images{
+	display: block;
+	border: solid 0px red;
+	position: absolute;
+	width: 50%;
+	height: 50%;
+	text-align: center;
+	background-position: center;
+	background-color: #ffeed2;
+	background-repeat: no-repeat;
+	background-size: 60% 100%;
+}
+
+.block{
+	display: block;
+	border: solid 0px red;
+	position: absolute;
+	width: 50%;
+	height: 50%;
+	background-color: rgba(255, 255, 255, 1);	
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.block p{
+    position: absolute;               
+    top: 50%;                         
+    transform: translate(0, -60%);
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}

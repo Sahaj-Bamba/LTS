@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Listen Think Shout!</title>
+
+  <meta charset="utf-8">  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="links.css">
+  <link rel="stylesheet" type="text/css" href="home.css">
+
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" type="text/css" href="Home2.css">
+  <link rel="stylesheet" type="text/css" href="Style_Contact.css">
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $(".tag").hover(function(){
+          $(this).children(".image").css("display","none");
+          $(this).children(".image2").css("display","inline-block");
+        } , 
+
+      function(){
+          $(this).children(".image2").css("display","none");
+          $(this).children(".image").css("display","inline-block");
+        }
+      );
+
+      $(".menu_item").hover(function(){
+        $(this).css("background-color","#fff");
+      },
+      function(){
+        $(this).css("background-color","#f3f3f3");
+        console.log("hell");
+      });
+    });
+  </script>
+<style type="text/css">
+  .Image{
+  display: block;
+  border: solid 0px red;
+  position: relative;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+::-webkit-scrollbar { 
+    display: none; 
+}
+  </style>
+</head>
+
+<body style="height: 99%; width: 99%; background-color: #f3f3f3;">
+
+  <div class="header" >
+    <div class="Image" style=" background-image: url(logos/logo.svg); border: solid 0px blue; background-color: #f3f3f3; "> 
+    </div>
+
+    <div class="menu" >
+      <div class="menu_item">
+            <a href="Home.html"> HOME </a> 
+        </div>
+        <div class="menu_item" >
+            <a href="About.html"> ABOUT </a> 
+        </div>
+        <div class="menu_item">
+            <a href="Services.html"> SERVICES </a>
+        </div>
+        <div class="menu_item">
+          <a href="Celeb.html"> CELEBRITY </a>
+        </div>
+        <div class="menu_item">
+            <a href="Portfolio.html"> PORTFOLIO </a>
+        </div>
+        <div class="menu_item" >
+            <a href="Blog.html"> BLOG </a>
+        </div>
+        <div class="menu_item" >
+            <a href="Contact.html"> CONTACT </a>
+        </div>
+    </div>
+  </div>
+
+  <div class="main" >
+
+    <div id="map" style="border: solid 0px red;"></div>
+
+    <script>
+                                                              // Maps
+      var marker;
+
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 13,
+          center: {lat: 59.325, lng: 18.070}
+        });
+
+        marker = new google.maps.Marker({
+          map: map,
+          draggable: true,
+          animation: google.maps.Animation.DROP,
+          position: {lat: 59.327, lng: 18.067}
+        });
+        marker.addListener('click', toggleBounce);
+      }
+
+      function toggleBounce() {
+        if (marker.getAnimation() !== null) {
+          marker.setAnimation(null);
+        } else {
+          marker.setAnimation(google.maps.Animation.BOUNCE);
+        }
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBv19gN1ntBdb61vuMPqA-0Nft1LO_rKg4&callback=initMap">
+    </script>
+      <div style="position: absolute; height: 50%; width: 100%; top: 50%;background-color: #fff;">
+        
+      </div>
+      <div id="info" style="height: 45%; width:98%; display: block; border: solid 0px red; position: relative; top: 0%; background-color: white; left: 2%">
+        <div style="font-size: 3em; font-weight: bold; height: 30%; width: 40%; position: absolute; border: solid 0px blue; top: 5%;">
+          Say Hello!
+        </div>
+        <div style="display: block; border: solid 0px black; height:60%; position: absolute; top: 40%; width: 40%;">
+          We would love to hear more about you and how can we help you!
+          <br><br>
+          E102, SF, Jeevan Park Uttam Nagar, New Delhi
+          <br><br>
+          +91 9818 77 9005<br>
+          sahib@listenthinkshout.com
+        </div>
+  <form method="post" style="width: 50%; height: 100%;  display: block; position: absolute; left: 48%; top: 5%">
+    <input type="text" name="name" value="Your Name" style="width: 48%; display: inline-block; height: 15%;" />
+    <input name="email" type="text" value="Your Email" style="width: 48%; display: inline-block; height: 15%;" />
+    <br>
+    <br>
+    <input name="subject" type="text" value="Subject" style="width: 96%; display: inline-block; height: 15%;"/>
+    <br>
+    <br>
+    <textarea name="comment" rows="5" cols="40"   />Comment
+    </textarea>
+    <br>
+    <br>
+    <input type="submit" value="Submit" />
+  </form>
+</div>
+
+  </div>
+
+  <div class="footer" >
+      Copyright © 2017. Design by ListenThinkShout Communications 
+      <div class="social" >
+        <div class="tag" >
+        <div class="image" style=" border: solid 0px red; background-image: url('logos/fb.jpg');" >
+        </div>
+        <div class="image2" style=" border: solid 0px red; background-image: url('logos/fb2.jpg');">
+        </div>
+        </div>
+        <div class="tag" >
+        <div class="image" style="background-image: url('logos/twitter.jpg'); " >
+        </div>
+        <div class="image2" style=" border: solid 0px red; background-image: url('logos/twitter2.jpg'); ">
+        </div>
+        </div>
+        <div class="tag" >
+        <div class="image" style=" border: solid 0px red; background-image: url('logos/instagram.png'); " >
+        </div>
+        <div class="image2" style=" border: solid 0px red; background-image: url('logos/instagram2.png'); ">
+        </div>
+        </div>
+        <div class="tag" >
+        <div class="image" style=" border: solid 0px red; background-image: url('logos/youtube.png'); " >
+        </div>
+        <div class="image2" style=" border: solid 0px red; background-image: url('logos/youtube2.png'); ">
+        </div>
+        </div>
+      </div>
+  </div>
+</body>
+</html>
+
+

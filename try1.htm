@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Listen Think Shout!</title>
+
+  <meta charset="utf-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="celeb.css">
+
+ <script>
+
+	$(document).ready(function(){
+	    $(".Image").hover(function(){
+	        $(this).children(".Label").slideDown(1000);
+	    } , 
+
+	    function(){
+	        $(this).children(".Label").slideUp(1000);
+	    }
+	    );
+	
+	    var x=2;
+	    var t=0;
+	    var f=0;
+	    	$("#celeb"+(x%3+1)).fadeOut(500);
+	    	$("#"+(x%3+1)).css("background-color", "#BBB"	);
+	    	x++;
+	    	$("#celeb"+(x%3+1)).fadeIn(500);
+	    	$("#"+(x%3+1)).css("background-color", "blue"	);
+	    	console.log(x);
+function test1(){
+	    	$("#celeb"+(x%3+1)).fadeOut(500);
+	    	$("#"+(x%3+1)).css("background-color", "#BBB"	);
+	    	x++;
+	    	$("#celeb"+(x%3+1)).fadeIn(500);
+	    	$("#"+(x%3+1)).css("background-color", "blue"	);
+//	    	console.log(x);
+	    	t=0;
+	    	f=0;
+	    }
+	   var t1 = setInterval(test1,8000);
+
+	    setInterval(function(){
+	    	if (x%3+1!=1) {
+	    	$("#celeb"+(x%3+1)).css("top","-"+t+"%");
+	    	if(f%2==0)
+	    		t++;
+	    	else
+	    		t--;
+	    	if (t>25||t<0) {
+	    		f++;
+	    	}
+	    }	
+	    },100);
+	    $(".dot").click(function(){
+	    	var t=this;
+	    	clearInterval(t1);
+	    	$("#celeb"+(1)).fadeOut(50);
+	    	$("#celeb"+(2)).fadeOut(50);
+	    	$("#celeb"+(3)).fadeOut(50);
+	    	$("#celeb"+($(this).children('input[name=articleid]').val())).fadeIn(50);
+	    	$("#1").css("background-color", "#BBB"	);
+	    	$("#2").css("background-color", "#BBB"	);
+	    	$("#3").css("background-color", "#BBB"	);
+	    	$("#"+($(this).children('input[name=articleid]').val())).css("background-color", "blue"	);
+	    	t=0;
+	    	f=0;	
+			t1 = setInterval(test1,8000);	   
+			x= parseInt(($(this).children('input[name=articleid]').val()))+2;
+			console.log(x);
+	    });
+
+	});	
+
+</script>
+
+
+</head>
+
+<body style="background-color: #222; overflow: hidden;">
+
+<div style="position: fixed; z-index: 3; height: 11%; width: 99%; margin: 0px; top: 0%; background-color: #222;"></div>
+ 
+ <div class="main" style="background-color: #777;"> 
+	<div class="pointer" style="display: block; position: relative; text-align: center; border: solid 0px blue; background-color: #DDD; z-index: 5;">
+  		
+  		<span class="dot" id="1">
+  			<input style="display: none" name="articleid" type="hidden" value=1 />
+  		</span>
+  		<span class="dot" id="2">
+  			<input style="display: none" name="articleid" type="hidden" value=2 />
+  		</span>
+ 		<span class="dot" id="3">
+ 			<input style="display: none" name="articleid" type="hidden" value=3 />
+ 		</span>
+
+  	</div>
+  	<div id="celeb1" style="overflow: hidden; display: block; position: relative; border: solid 0px black; height: 90%; width: 100%; background-color: #FFF; top: 1%; left: 0%; z-index: 2;">
+  	<span style="font-weight: bold; font-size: 1.5em; display: block; border: solid 0px red; position: fixed; top: 15%; z-index: 12;"> SINGERS</span>  		
+  		<div class="Image">
+			<div class="Image2" style="background-image: url('celeb/1.jpg');"></div>
+			<div class="Label">
+				Mika Singh
+			</div>
+		</div>
+  		<div class="Image">
+			<div class="Image2" style="background-image: url('celeb/2.jpg');"></div>
+			<div class="Label">
+				Mohit Chauhan
+			</div>
+		</div>
+		<div class="Image">
+			<div class="Image2" style="background-image: url('celeb/3.jpg');"></div>
+			<div class="Label">
+				KK
+			</div>
+		</div>
+		<div class="Image">
+			<div class="Image2" style="background-image: url('celeb/4.jpg');"></div>
+			<div class="Label">
+				Ankit Tiwari
+			</div>
+		</div>
+		<div class="Image">
+			<div class="Image2" style="background-image: url('celeb/5.jpg');"></div>
+			<div class="Label">
+				Sunidhi Chauhan
+			</div>
+		</div>
+		<div class="Image">
+			<div class="Image2" style="background-image: url('celeb/6.jpg');"></div>
+			<div class="Label">
+				Shirley Setia
+			</div>
+		</div>
+		<div class="Image">
+			<div class="Image2" style="background-image: url('celeb/7.jpg');"></div>
+			<div class="Label">
+				Suraj Jagan
+			</div>
+		</div>
+		<div class="Image">
+			<div class="Image2" style="background-image: url('celeb/8.jpg');"></div>
+			<div class="Label">
+				Javed Ali
+			</div>
+		</div>
+		<div class="Image">
+			<div class="Image2" style="background-image: url('celeb/9.jpg');"></div>
+			<div class="Label">
+				Jasmine Sandlas
+			</div>
+		</div>
+		<div class="Image">
+			<div class="Image2" style="background-image: url('celeb/10.jpg');"></div>
+			<div class="Label">
+				Neha Kakkar
+			</div>
+		</div>
+		<div class="Image">
+			<div class="Image2" style="background-image: url('celeb/11.jpg');"></div>
+			<div class="Label">
+				Gajendra Verma
+			</div>
+		</div>
+  	</div>
+    <div id="celeb2" style="display: none; position: relative; border: solid 0px black; height: 90%; width: 100%; background-color: #FFF; top: 1%; left: 0%; z-index: 2;">
+  		<span style="font-weight: bold; font-size: 1.5em; display: block; border: solid 0px red; position: fixed; top: 15%; z-index: 12;"> Exclusive TV Celebrity - Female </span>
+  		<div class="Image">
+			<div class="Image2" style="background-image: url('celeb/12.jpg');"></div>
+			<div class="Label">
+				Rashami Desai
+			</div>
+		</div>
+  		<div class="Image">
+			<div class="Image2" style="background-image: url('celeb/13.jpg');"></div>
+			<div class="Label">
+				Mouni Roy
+			</div>
+		</div>
+		<div class="Image">
+			<div class="Image2" style="background-image: url('celeb/14.jpg');"></div>
+			<div class="Label">
+				Ankita Lokhande
+			</div>
+		</div>
+		<div class="Image">
+			<div class="Image2" style="background-image: url('celeb/15.jpg');"></div>
+			<div class="Label">
+				Krystle D'souza
+			</div>
+		</div>
+		<div class="Image">
+			<div class="Image2" style="background-image: url('celeb/16.jpg');"></div>
+			<div class="Label">
+				Ada Khan
+			</div>
+		</div>
+		<div class="Image">
+			<div class="Image2" style="background-image: url('celeb/17.jpg');"></div>
+			<div class="Label">
+				Pooja Banerjee
+			</div>
+		</div>
+		<div class="Image">
+			<div class="Image2" style="background-image: url('celeb/18.jpg');"></div>
+			<div class="Label">
+				Dalljiet Kaur
+			</div>
+		</div>
+		<div class="Image">
+			<div class="Image2" style="background-image: url('celeb/19.jpg');"></div>
+			<div class="Label">
+				Sneha Ullal
+			</div>
+		</div>
+		<div class="Image">
+			<div class="Image2" style="background-image: url('celeb/20.jpg');"></div>
+			<div class="Label">
+				Preeti Jhangiani
+			</div>
+		</div>
+		<div class="Image">
+			<div class="Image2" style="background-image: url('celeb/21.jpg');"></div>
+			<div class="Label">
+				Madalsa Sharma
+			</div>
+		</div>
+		<div class="Image">
+			<div class="Image2" style="background-image: url('celeb/22.jpg');"></div>
+			<div class="Label">
+				Shiny Doshi
+			</div>
+		</div>
+		<div class="Image">
+			<div class="Image2" style="background-image: url('celeb/23.jpg');"></div>
+			<div class="Label">
+				Parul Chauhan
+			</div>
+		</div>
+		<div class="Image">
+			<div class="Image2" style="background-image: url('celeb/24.jpg');"></div>
+			<div class="Label">
+				Ankita Sharma
+			</div>
+		</div>
+		<div class="Image">
+			<div class="Image2" style="background-image: url('celeb/25.jpg');"></div>
+			<div class="Label">
+				Neha Pendse
+			</div>
+		</div>
+		<div class="Image">
+			<div class="Image2" style="background-image: url('celeb/26.jpg');"></div>
+			<div class="Label">
+				Sreejita De
+			</div>
+		</div>
+		<div class="Image">
+			<div class="Image2" style="background-image: url('celeb/27.jpg');"></div>
+			<div class="Label">
+				Lavina Tandon
+			</div>
+		</div>
+		<div class="Image">
+			<div class="Image2" style="background-image: url('celeb/28.jpg');"></div>
+			<div class="Label">
+				Sonal Vebgurlekar
+			</div>
+		</div>
+		<div class="Image">
+			<div class="Image2" style="background-image: url('celeb/29.jpg');"></div>
+			<div class="Label">
+				Monica Bedi
+			</div>
+		</div>
+		<div class="Image">
+			<div class="Image2" style="background-image: url('celeb/30.jpg');"></div>
+			<div class="Label">
+				Aarti Chabria
+			</div>
+		</div>
+		<div class="Image">
+			<div class="Image2" style="background-image: url('celeb/31.jpg');"></div>
+			<div class="Label">
+				Mahek Chahal
+			</div>
+		</div>
+		<div class="Image">
+			<div class="Image2" style="background-image: url('celeb/32.jpg');"></div>
+			<div class="Label">
+				Karishma Kotak
+			</div>
+		</div>
+		<div class="Image">
+			<div class="Image2" style="background-image: url('celeb/33.jpg');"></div>
+			<div class="Label">
+				Vidhi Pandya
+			</div>
+		</div>
+	</div>
+
+  	<div id="celeb3" style="display: none; position: relative; border: solid 0px black; height: 90%; width: 100%; background-color: #FFF; top: 15%; left: 0%;  z-index: 2;">
+  		<span style="font-weight: bold; font-size: 1.5em; display: block; border: solid 0px red; position: fixed; top: 9%; z-index: 12;"> Exclusive TV Celebrity - Male </span>
+  		<div class="Image">
+			<div class="Image2" style="background-image: url('celeb/34.jpg');"></div>
+			<div class="Label">
+				Karanvir Bohra
+			</div>
+		</div>
+  		<div class="Image">
+			<div class="Image2" style="background-image: url('celeb/35.jpg');"></div>
+			<div class="Label">
+				Arjun Bijlani
+			</div>
+		</div>
+		<div class="Image">
+			<div class="Image2" style="background-image: url('celeb/36.jpg');"></div>
+			<div class="Label">
+				Karan Tacker
+			</div>
+		</div>
+		<div class="Image">
+			<div class="Image2" style="background-image: url('celeb/37.jpg');"></div>
+			<div class="Label">
+				Aamir Ali
+			</div>
+		</div>
+		<div class="Image">
+			<div class="Image2" style="background-image: url('celeb/38.jpg');"></div>
+			<div class="Label">
+				Balraj Syal
+			</div>
+		</div>
+		<div class="Image">
+			<div class="Image2" style="background-image: url('celeb/39.jpg');"></div>
+			<div class="Label">
+				Pearl V Puri
+			</div>
+		</div>
+		<div class="Image">
+			<div class="Image2" style="background-image: url('celeb/40.jpg');"></div>
+			<div class="Label">
+				Amit Tandon
+			</div>
+		</div>
+		<div class="Image">
+			<div class="Image2" style="background-image: url('celeb/41.jpg');"></div>
+			<div class="Label">
+				Gaurav Bajaj
+			</div>
+		</div>
+		<div class="Image">
+			<div class="Image2" style="background-image: url('celeb/42.jpg');"></div>
+			<div class="Label">
+				Manu Punjabi
+			</div>
+		</div>
+		<div class="Image">
+			<div class="Image2" style="background-image: url('celeb/43.jpg');"></div>
+			<div class="Label">
+				Eijaz Khan
+			</div>
+		</div>
+		<div class="Image">
+			<div class="Image2" style="background-image: url('celeb/44.jpg');"></div>
+			<div class="Label">
+				Ashmit Patel
+			</div>
+		</div>
+		<div class="Image">
+			<div class="Image2" style="background-image: url('celeb/45.jpg');"></div>
+			<div class="Label">
+				Shivn Narang
+			</div>
+		</div>
+		<div class="Image">
+			<div class="Image2" style="background-image: url('celeb/46.jpg');"></div>
+			<div class="Label">
+				Kripp Kapur Suri
+			</div>
+		</div>
+		<div class="Image">
+			<div class="Image2" style="background-image: url('celeb/47.jpg');"></div>
+			<div class="Label">
+				Avinash Mukherjee
+			</div>
+		</div>
+		<div class="Image">
+			<div class="Image2" style="background-image: url('celeb/48.jpg');"></div>
+			<div class="Label">
+				Kunal Vohral
+			</div>
+		</div>
+  	</div>
+  	<div id="complete" style="height: 100%; width: 100%; position: absolute; top: 0%; z-index: 1; background-color: #FFF; ">
+  		
+  	</div>
+</div>
+<div id="footer" style="height: 7%; width: 100%; position: absolute; bottom: 0%; background-color: #222;">
+	
+</div>
+</body>
+</html>

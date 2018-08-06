@@ -1,0 +1,16 @@
+.image{
+	display: inline-block;
+	border: solid 0px red;
+	position: relative;
+	background-color: white;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.image2{
+	display: inline-block;
+	border: solid 0px red;
+	position: relative;
+	background-color: white;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}

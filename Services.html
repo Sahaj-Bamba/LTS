@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Listen Think Shout!</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="links.css">
+  <link rel="stylesheet" type="text/css" href="home.css">
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" type="text/css" href="Home2.css">
+
+	<link rel="stylesheet" type="text/css" href="Style_Services.css">
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $(".tag").hover(function(){
+          $(this).children(".image").css("display","none");
+          $(this).children(".image2").css("display","inline-block");
+        } , 
+
+      function(){
+          $(this).children(".image2").css("display","none");
+          $(this).children(".image").css("display","inline-block");
+        }
+      );
+
+      $(".menu_item").hover(function(){
+        $(this).css("background-color","#fff");
+      },
+      function(){
+        $(this).css("background-color","#f3f3f3");
+        console.log("hell");
+      });
+    });
+  </script>
+  <style type="text/css">
+  .Image{
+  display: block;
+  border: solid 0px red;
+  position: relative;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+::-webkit-scrollbar { 
+    display: none; 
+}
+  </style>
+</head>
+
+<body style="height: 99%; width: 99%; background-color: #f3f3f3;">
+
+  <div class="header" >
+    <div class="Image" style=" background-image: url(logos/logo.svg); border: solid 0px blue; background-color: #f3f3f3; "> 
+    </div>
+
+    <div class="menu" >
+      <div class="menu_item">
+            <a href="Home.html"> HOME </a> 
+        </div>
+        <div class="menu_item" >
+            <a href="About.html"> ABOUT </a> 
+        </div>
+        <div class="menu_item">
+            <a href="Services.html"> SERVICES </a>
+        </div>
+        <div class="menu_item">
+          <a href="Celeb.html"> CELEBRITY </a>
+        </div>
+        <div class="menu_item">
+            <a href="Portfolio.html"> PORTFOLIO </a>
+        </div>
+        <div class="menu_item" >
+            <a href="Blog.html"> BLOG </a>
+        </div>
+        <div class="menu_item" >
+            <a href="Contact.html"> CONTACT </a>
+        </div>
+    </div>
+  </div>
+
+  <div class="main" >
+      <div class="images" style="background-image: url('Services1.jpg'); left: 0% ;">
+      </div>
+      <div class="block" style="right: 0%; ">
+        <p ">
+        We believe we are not in the business of creating ads but interactions, responses and more. That's what our team of young minds brings to the table with a collective experience of over 15 years and some good exposure to different flavours of advertising such as mainline, digital as well as OOH (brand activations). Working in tandem with our digital support team and production partners, we are equipped to deliver the most compelling commercial content across all mediums and screens.
+        </p>  
+      </div>
+      <div class="block" style="left: 0%; top: 50%; ">
+        <p >
+        Watching a movie in a theatre is not about the story but about the experience, the ambience that brings you back every time. Holding an event is a similar ball game. With expertise in experiential marketing through small as well as large scale events such as product launch parties, brand activations, musical nights, award ceremonies, open-mic contests etc, we create experiences that last well beyond the memories of the event. With a staunch belief that entertainment has the potential to redefine every industry, we also bring you a long line-up of renowned playback singers, musicians and even stand-up artists. So you and your brand are remembered for the best possible ex perience.
+        </p>
+      </div>
+      <div class="images" style="background-image: url('Services2.jpg'); right: 0%; bottom: 0%;">
+      </div>  
+  </div>
+
+  <div class="footer" >
+      Copyright © 2017. Design by ListenThinkShout Communications 
+      <div class="social" >
+        <div class="tag" >
+        <div class="image" style=" border: solid 0px red; background-image: url('logos/fb.jpg');" >
+        </div>
+        <div class="image2" style=" border: solid 0px red; background-image: url('logos/fb2.jpg');">
+        </div>
+        </div>
+        <div class="tag" >
+        <div class="image" style="background-image: url('logos/twitter.jpg'); " >
+        </div>
+        <div class="image2" style=" border: solid 0px red; background-image: url('logos/twitter2.jpg'); ">
+        </div>
+        </div>
+        <div class="tag" >
+        <div class="image" style=" border: solid 0px red; background-image: url('logos/instagram.png'); " >
+        </div>
+        <div class="image2" style=" border: solid 0px red; background-image: url('logos/instagram2.png'); ">
+        </div>
+        </div>
+        <div class="tag" >
+        <div class="image" style=" border: solid 0px red; background-image: url('logos/youtube.png'); " >
+        </div>
+        <div class="image2" style=" border: solid 0px red; background-image: url('logos/youtube2.png'); ">
+        </div>
+        </div>
+      </div>
+  </div>
+</body>
+</html>
