@@ -1,7 +1,7 @@
 
 
 
-/*@media (min-width: 502){*/
+@media screen and (min-width: 502px){
 
 .tag{
 	height: 100%; width: 3%;display: inline-block;
@@ -12,7 +12,7 @@
 }
 
 .footer{
-	position: fixed; bottom: 1%; left: 5%; height: 4%; display: block; border: solid 0px blue; width: 100%; background-color: #f3f3f3; z-index: 5;
+	position: fixed; bottom: 1%; left: 5%; height: 5%; display: block; border: solid 0px blue; width: 100%; background-color: #f3f3f3; z-index: 5;
 }
 
 .main{
@@ -20,11 +20,11 @@
 }
 
 .menu_item{
-	position: relative; text-align: center; padding: 1%;  min-width: 10%; height: 100%; display: inline-block; border: solid 0px blue;padding-top: 3%;
+	position: relative; text-align: center; padding: 1%;  min-width: 10%; height: 100%; display: inline-block; border: solid 0px blue;padding-top: 1.5%;
 }
 
 .menu{
-	position: absolute; top: 0%; right: 5%; height: 100%; width : 50%; background-color: #f3f3f3; text-align: right; border: solid 0px red;
+	position: absolute; top: 0%; right: 5%; height: 100%; width : 70%; background-color: #f3f3f3; text-align: right; border: solid 0px red;
 }
 
 .Imagex{
@@ -36,11 +36,11 @@
 }
 
 .image{
-	display: inline-block; height: 100%; width: 100%;
+	display: inline-block; height: 100%; width: 100%; background-size: 100% 100%;
 }
 
 .image2{
-	 height: 100%; width: 100%; display: none;
+	 height: 100%; width: 100%; display: none;	background-size: 100% 100%;
 }
 
 .header{
@@ -48,7 +48,7 @@
 }
 
 
-/*}*/
+}
 
 @media screen and (orientation:landscape) and (max-height: 501) {
 
@@ -57,12 +57,82 @@
 
 
 
-@media (max-width: 501){
-	.footer{
-		font-size: 0.2em;
-	}  
-	.body{
-	    font-size: 12px;
-    	line-height: 1;
-	}
+@media (max-width: 501px) and (orientation:portrait){
+
+.tag{
+	height: 75%; width: 5%; display: inline-block;
+}
+
+.social{
+	text-align: right; height: 100%; top:0%; width: 100%; position: absolute;  display: block; right: 10%; 
+}
+
+.txt{
+	height: 100%;
+	width: 80%;
+	position: absolute;
+	left: 0%;
+	font-size: 1em;
+}
+
+.footer{
+	position: fixed; bottom: 0%; left: 0%; height: 5%; display: block; border: solid 0px blue; width: 100%; background-color: #f3f3f3; z-index: 5;
+	font-size: 0.75em;
+}
+
+.main{
+	position: fixed; height: 90%; width: 98%; left: 1%; top: 5%; 
+	display: block; border: solid 0px black; z-index: 3;
+	overflow: auto; 
+}
+
+.menu_item{
+	position: relative; text-align: center; padding: 0%;  min-width: auto; height: 25px; display: block; border: solid 0px blue; border-bottom: solid 0.5px black; padding-top: 1.5%;
+	background-color: rgba(220,220,220,0.2);
+}
+
+.menu{
+	position: absolute; top: 0%; right: 2%; height: 175px; width : 70%; background-color: rgba(240,240,240,0.2); text-align: right; border: solid 0px red;
+	display: none;
+}
+
+.Imagex{
+	text-align: left; position: absolute; height: 100%; width: 40%; left: 2%; top: -20%; background-size: 100% 100%;
+}
+
+.menu_button{
+	z-index: 10;
+	position: absolute;
+	right: 5%;
+	background-color: black;
+	color: black;
+	width: 20px;
+	height: 20px;
+	background-image: url(menu1.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat; 
+
+}
+
+.Image{
+	text-align: left; position: absolute; height: 100%; width: 20%; left: 2%; top: 0%; background-size: 100% 100%;
+}
+
+.image{
+	display: inline-block; height: 100%; width: 100%; background-size: 100% 100%;
+}
+
+.image2{
+	 height: 100%; width: 100%; display: none;	background-size: 100% 100%;
+}
+
+.header{
+	position: fixed; top: 2%; height: 30px ; display: block; border: solid 0px blue; width: 99%; background-color: #f3f3f3; z-index: 5;	
+}
+
+body{
+	height: 100%;
+	width: 100%;
+}
+
 }

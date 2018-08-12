@@ -1,18 +1,9 @@
 body {
 	background-color: #888;
 }
-.main {
-	display: block;
-	border: solid 0px black;
-	position: fixed;
-	width: 80%;
-	height: 90%;
-	background-color: rgba(150 150 150 1);
-	top: 5%;
-	left: 10%;
-}
 
-.image{
+@media screen and (min-width: 502px){
+.images{
 	display: block;
 	border: solid 0px red;
 	position: absolute;
@@ -22,25 +13,9 @@ body {
 	background-position: center;
 	background-color: #ffeed2;
 	background-repeat: no-repeat;
-	background-size: 70% 100%;
+	background-size: 60% 100%;
 }
 
-.image1{
-	display: inline-block;
-	border: solid 0px red;
-	position: relative;
-	background-color: white;
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-}
-.image2{
-	display: inline-block;
-	border: solid 0px red;
-	position: relative;
-	background-color: white;
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-}
 .block{
 	display: block;
 	border: solid 0px red;
@@ -60,4 +35,47 @@ body {
     text-align: center;
     margin-left: 10%;
     margin-right: 10%;
+}
+
+}
+
+@media screen and (max-width: 502px) and (orientation:portrait) {
+		
+
+.images{
+	display: block;
+	border: solid 0px red;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background-position: center;
+	background-color: #ffeed2;
+	background-repeat: no-repeat;
+	background-size: 100% 65%;
+}		
+
+
+.block{
+	display: block;
+	border: solid 0px red;
+	position: relative;
+	width: 100%;
+	height: 50%;
+	background-color: rgba(255, 255, 255, 1);	
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.block p{
+	font-size: 1em;
+    position: relative;               
+    top: 50%;                         
+    transform: translate(0, -60%);
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
 }

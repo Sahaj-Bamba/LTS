@@ -1,0 +1,76 @@
+
+body {
+	background-color: #888;
+}
+
+
+  .Image{
+  display: block;
+  border: solid 0px red;
+  position: relative;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+@media screen and (min-width: 502px){
+
+#map {
+	height: 50%;
+	width: 100%;
+}
+
+.white_back{
+	position: absolute; height: 50%; width: 100%; top: 50%;background-color: #fff;	
+}
+
+#info{
+height: 50%; width:98%; display: block; border: solid 0px red; position: relative; top: 0%; background-color: white; left: 2%
+}
+
+.special{
+	font-size: 3em; font-weight: bold; height: 30%; width: 40%; position: absolute; border: solid 0px blue; top: 5%;
+}
+
+.txt{
+	display: block; border: solid 0px black; height:60%; position: absolute; top: 40%; width: 40%;
+}
+
+form{
+	width: 50%; height: 100%;  display: block; position: absolute; left: 48%; top: 5%;
+}
+
+.spil{
+	display: none;
+}
+
+}
+
+@media screen and (max-width: 502px){
+
+#map {
+	height: 50%;
+	width: 100%;
+}
+
+	.main{
+		display: block;
+	}
+	form{
+	width: 100%; height: 100%;  display: block; position: relative; left: 0%; top: 5%;
+}
+.special{
+	font-size: 3em; font-weight: bold; height: 30%; width: 100%; position: relative; border: solid 0px blue; top: 5%;
+}
+
+.txt{
+	display: block; border: solid 0px black; height:100%; position: relative;  width: 100%;
+}
+
+.spil{
+	display: block;
+}	
+}
