@@ -1,8 +1,33 @@
 body {
 	background-color: #888;
 }
-
+.main {
+	display: block;
+	border: solid 0px black;
+	position: fixed;
+	width: 90%;
+	height: 90%;
+	background-color: white;
+	top: 5%;
+	left: 5%;
+}
 #map {
-	height: 50%;
+	height: 40%;
 	width: 100%;
+}
+.image{
+	display: inline-block;
+	border: solid 0px red;
+	position: relative;
+	background-color: white;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.image2{
+	display: inline-block;
+	border: solid 0px red;
+	position: relative;
+	background-color: white;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 }

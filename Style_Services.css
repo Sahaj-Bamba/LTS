@@ -1,8 +1,18 @@
 body {
 	background-color: #888;
 }
+.main {
+	display: block;
+	border: solid 0px black;
+	position: fixed;
+	width: 80%;
+	height: 90%;
+	background-color: rgba(150 150 150 1);
+	top: 5%;
+	left: 10%;
+}
 
-.images{
+.image{
 	display: block;
 	border: solid 0px red;
 	position: absolute;
@@ -12,9 +22,25 @@ body {
 	background-position: center;
 	background-color: #ffeed2;
 	background-repeat: no-repeat;
-	background-size: 60% 100%;
+	background-size: 70% 100%;
 }
 
+.image1{
+	display: inline-block;
+	border: solid 0px red;
+	position: relative;
+	background-color: white;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.image2{
+	display: inline-block;
+	border: solid 0px red;
+	position: relative;
+	background-color: white;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
 .block{
 	display: block;
 	border: solid 0px red;

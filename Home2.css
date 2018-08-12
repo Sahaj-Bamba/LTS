@@ -1,7 +1,7 @@
 
 
 
-@media screen and (min-width: 502px){
+/*@media (min-width: 502){*/
 
 .tag{
 	height: 100%; width: 3%;display: inline-block;
@@ -36,11 +36,11 @@
 }
 
 .image{
-	display: inline-block; height: 100%; width: 100%; background-size: 100% 100%;
+	display: inline-block; height: 100%; width: 100%;
 }
 
 .image2{
-	 height: 100%; width: 100%; display: none;	background-size: 100% 100%;
+	 height: 100%; width: 100%; display: none;
 }
 
 .header{
@@ -48,7 +48,7 @@
 }
 
 
-}
+/*}*/
 
 @media screen and (orientation:landscape) and (max-height: 501) {
 
