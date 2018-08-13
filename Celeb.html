@@ -23,11 +23,16 @@
 	    } , 
 
 	    function(){
-	        $(this).children(".Label").slideUp(1000);
+	        $(this).children(".Label").slideUp(2000);
 	    }
 	    );
 
-	
+$(".Image").click(function(){
+		
+		$(this).children(".Label").slideDown(2000);
+		$(this).children(".Label").slideUp(2000);
+
+	});
 	     x=2;
 	    var t=0;
 	    var f=0;
@@ -136,9 +141,10 @@ function swipedetect(el, callback){
     distY,
     threshold = 100, //required min distance traveled to be considered swipe
     restraint = 100, // maximum distance allowed at the same time in perpendicular direction
-    allowedTime = 500, // maximum time allowed to travel that distance
+    allowedTime = 1500, // maximum time allowed to travel that distance
     elapsedTime,
     startTime,
+    clickTime= 2000,
     handleswipe = callback || function(swipedir){}
   
     touchsurface.addEventListener('touchstart', function(e){
@@ -151,10 +157,7 @@ function swipedetect(el, callback){
         e.preventDefault()
     }, false)
   
-    touchsurface.addEventListener('touchmove', function(e){
-        e.preventDefault() // prevent scrolling when inside DIV
-    }, false)
-  
+
     touchsurface.addEventListener('touchend', function(e){
         var touchobj = e.changedTouches[0]
         distX = touchobj.pageX - startX // get horizontal dist traveled by finger while in contact with surface
@@ -167,6 +170,13 @@ function swipedetect(el, callback){
             else if (Math.abs(distY) >= threshold && Math.abs(distX) <= restraint){ // 2nd condition for vertical swipe met
                 swipedir = (distY < 0)? 'up' : 'down' // if dist traveled is negative, it indicates up swipe
             }
+            else{
+            	swipedir = 'click'
+            } 
+
+        }
+        else if (elapsedTime <= clickTime ) {
+        	swipedir = 'click'
         }
         handleswipe(swipedir)
         e.preventDefault()
@@ -184,7 +194,13 @@ touch detection function usage
 
 
 window.addEventListener('load', function(){
-    var el = document.getElementByClassName('main')
+    var el = document.getElementById('celeb1')
+    var e2 = document.getElementById('celeb2')
+    var e3 = document.getElementById('celeb3')
+
+
+    var qwertyflag1=0;
+    var qwertyflag2=0;
     swipedetect(el, function(swipedir){
         if (swipedir == 'right'){
             
@@ -198,8 +214,25 @@ window.addEventListener('load', function(){
 	    	f=0;
 	    }
         else if (swipedir == 'left') {
-        	x++;
         	
+        	
+	    	$("#celeb"+(x%3+1)).fadeOut(500);
+	    	$("#"+(x%3+1)).css("background-color", "#BBB"	);
+	    	x--;
+
+	    	$("#celeb"+(x%3+1)).fadeIn(500);
+	    	$("#"+(x%3+1)).css("background-color", "blue"	);
+//	    	console.log(x);
+	    	t=0;
+	    	f=0;
+	    
+        }
+       
+
+    })
+        swipedetect(e2, function(swipedir){
+        if (swipedir == 'right'){
+            
 	    	$("#celeb"+(x%3+1)).fadeOut(500);
 	    	$("#"+(x%3+1)).css("background-color", "#BBB"	);
 	    	x++;
@@ -208,9 +241,81 @@ window.addEventListener('load', function(){
 //	    	console.log(x);
 	    	t=0;
 	    	f=0;
+	    }
+        else if (swipedir == 'left') {
+        	
+        	
+	    	$("#celeb"+(x%3+1)).fadeOut(500);
+	    	$("#"+(x%3+1)).css("background-color", "#BBB"	);
+	    	x--;
+
+	    	$("#celeb"+(x%3+1)).fadeIn(500);
+	    	$("#"+(x%3+1)).css("background-color", "blue"	);
+//	    	console.log(x);
+	    	t=0;
+	    	f=0;
 	    
         }
-    })
+        else if (swipedir == 'up' ) {
+        	if (qwertyflag1%2==0) {
+        		($("#celeb"+(x%3+1)).css('height',(parseInt(($("#celeb"+(x%3+1)).css('height'))[0]+($("#celeb"+(x%3+1)).css('height'))[1]+($("#celeb"+(x%3+1)).css('height'))[2])+100)+'px'));
+        		$("#celeb"+(x%3+1)).css('top','-100px');
+        		qwertyflag1++;
+        	}
+        }
+        else if (swipedir == 'down' ) {
+        	if (qwertyflag1%2!=0) {
+        	($("#celeb"+(x%3+1)).css('height',(parseInt(($("#celeb"+(x%3+1)).css('height'))[0]+($("#celeb"+(x%3+1)).css('height'))[1]+($("#celeb"+(x%3+1)).css('height'))[2])-100)+'px'));
+        	$("#celeb"+(x%3+1)).css('top','0px');
+        	qwertyflag1++;
+        }
+    }
+})
+                swipedetect(e3, function(swipedir){
+        if (swipedir == 'right'){
+            
+	    	$("#celeb"+(x%3+1)).fadeOut(500);
+	    	$("#"+(x%3+1)).css("background-color", "#BBB"	);
+	    	x++;
+	    	$("#celeb"+(x%3+1)).fadeIn(500);
+	    	$("#"+(x%3+1)).css("background-color", "blue"	);
+//	    	console.log(x);
+	    	t=0;
+	    	f=0;
+	    }
+        else if (swipedir == 'left') {
+        	
+        	
+	    	$("#celeb"+(x%3+1)).fadeOut(500);
+	    	$("#"+(x%3+1)).css("background-color", "#BBB"	);
+	    	x+=2;
+
+	    	$("#celeb"+(x%3+1)).fadeIn(500);
+	    	$("#"+(x%3+1)).css("background-color", "blue"	);
+//	    	console.log(x);
+	    	t=0;
+	    	f=0;
+	    
+        }
+
+
+        else if (swipedir == 'up' ) {
+        	if (qwertyflag2%2==0) {
+        		($("#celeb"+(x%3+1)).css('height',(parseInt(($("#celeb"+(x%3+1)).css('height'))[0]+($("#celeb"+(x%3+1)).css('height'))[1]+($("#celeb"+(x%3+1)).css('height'))[2])+100)+'px'));
+        		$("#celeb"+(x%3+1)).css('top','-100px');
+        		qwertyflag2++;
+        	}
+        }
+        else if (swipedir == 'down' ) {
+        	if (qwertyflag2%2!=0) {
+        	($("#celeb"+(x%3+1)).css('height',(parseInt(($("#celeb"+(x%3+1)).css('height'))[0]+($("#celeb"+(x%3+1)).css('height'))[1]+($("#celeb"+(x%3+1)).css('height'))[2])-100)+'px'));
+        	$("#celeb"+(x%3+1)).css('top','0px');
+        	qwertyflag2++;
+        }
+    }
+})
+
+
 })
 
 
@@ -271,8 +376,8 @@ window.addEventListener('load', function(){
 		</div>
 	</div>
 
-<div class="back1"></div>
 	<div class="main" >
+<div class="back1"></div>
 
 	<div class="pointer" >
   		
@@ -356,7 +461,7 @@ window.addEventListener('load', function(){
 			</div>
 		</div>
   	</div>
-    <div id="celeb2" style="display: none; ">
+    <div id="celeb2" >
   		<span class="special"> Exclusive TV Celebrity - Female <span class="spil"><br><br></span></span>
   		<div class="Image">
 			<div class="Image2" style="background-image: url('celeb/12.jpg');"></div>
@@ -492,8 +597,8 @@ window.addEventListener('load', function(){
 		</div>
 	</div>
 
-  	<div id="celeb3" style="display: none;">
-  		<span class="special"> Exclusive TV Celebrity - Male<span class="spil"><br><br> </span>
+  	<div id="celeb3" >
+  		<span class="special"> Exclusive TV Celebrity - Male<span class="spil"><br><br> </span></span>
   		<div class="Image">
 			<div class="Image2" style="background-image: url('celeb/34.jpg');"></div>
 			<div class="Label">
