@@ -3,6 +3,9 @@ body {
 }
 
 @media screen and (min-width: 502px){
+.spil{
+	display: none;
+}
 .images{
 	display: block;
 	border: solid 0px red;
@@ -36,23 +39,27 @@ body {
     margin-left: 10%;
     margin-right: 10%;
 }
-
+#dn{
+	display: block;
+}
 }
 
 @media screen and (max-width: 502px) and (orientation:portrait) {
 		
-
+.spil{
+	display: block;
+}
 .images{
 	display: block;
 	border: solid 0px red;
 	position: relative;
 	width: 100%;
-	height: 100%;
+	height: 70%;
 	text-align: center;
 	background-position: center;
 	background-color: #ffeed2;
 	background-repeat: no-repeat;
-	background-size: 100% 65%;
+	background-size: 140% 75%;
 }		
 
 
@@ -61,7 +68,7 @@ body {
 	border: solid 0px red;
 	position: relative;
 	width: 100%;
-	height: 50%;
+	height: auto;
 	background-color: rgba(255, 255, 255, 1);	
 	margin-left: auto;
 	margin-right: auto;
@@ -69,13 +76,27 @@ body {
 }
 
 .block p{
-	font-size: 1em;
-    position: relative;               
-    top: 50%;                         
-    transform: translate(0, -60%);
+	font-size: 0.8em;
+    position: relative;                                   
     text-align: center;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+#dn{
+	z-index: 50;
+	display: block;
+	position: fixed;
+	bottom: 50px;
+	right: 5px;
+	height: 30px;
+	width: 25px;
+
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 }
 
 }

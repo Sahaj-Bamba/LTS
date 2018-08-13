@@ -5,52 +5,174 @@ body {
 
 
 .dot {
-    height: 24px;
-    width: 24px;
+    height: 25px;
+    width: 25px;
     background-color: #BBB;
     border-radius: 50%;
     display: inline-block;
 }
 
-.Image{
-	display: inline-block;
-	border: solid 0px red;
-	position: relative;
-	width: 15%;
-	height: 20%;
-	margin: 3%;
-	background-color: white;
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
+
+@media screen and (min-width: 502px){
+
+
+	.Image{
+		display: inline-block;
+		border: solid 0px red;
+		position: relative;
+		width: 118px;
+		height: 140px;
+		margin: 50px;
+		background-color: white;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+
+	.Image2{
+		display: inline-block;
+		border: solid 0px red;
+		position: relative;
+		width: 100%;
+		height: 100%;
+		margin: 0%;
+		background-color: white;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+
+
+	.Label{
+		position: absolute;               
+	    top: 0%;                         
+	/*    transform: translate(0, -50%);				*/
+	    text-align: center;
+		border: solid 0px red;
+		font-weight: bolder;
+		font-style: italic;
+		width: 100%;
+		height: 100%;
+		margin: 0%;
+		background-color: rgba(160 , 240 , 180 , 0.6);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		display: none;
+	}
+
+	.back1{
+		position: fixed; z-index: 4; height: 11%; width: 99%; margin: 0px; top: 0%; background-color: #f3f3f3;
+	}
+
+	.pointer{
+		display: block; position: relative; text-align: center; border: solid 0px blue; background-color: #DDD; z-index: 5;
+	}
+
+	#celeb1{
+		overflow: auto; display: block; position: relative; border: solid 0px black; height: 90%; width: 100%; background-color: #FFF; top: 1%; left: 0%; z-index: 2;
+	}
+	#celeb2{
+		display: none; position: relative; border: solid 0px black; height: auto; width: 100%; background-color: #FFF; top: 1%; left: 0%; z-index: 2;
+	}
+	.special{
+		font-weight: bold; font-size: 1.5em; display: block; border: solid 0px red; position: fixed; top: 15%; z-index: 12;
+	}
+
+	.spil{
+		display: none;
+	}
+
+	#celeb3{
+		display: none; position: relative; border: solid 0px black; height: 90%; width: 100%; background-color: #FFF; top: 15%; left: 0%;  z-index: 2;
+	}
+	#complete{
+		height: 100%; width: 100%; position: absolute; top: 0%; z-index: 1; background-color: #FFF; 
+		display: none;
+	}
+	#footer{
+		height: 7%; width: 100%; position: absolute; bottom: 0%; background-color: #f3f3f3; z-index: 4;
+	}
+
 }
 
-.Image2{
-	display: inline-block;
-	border: solid 0px red;
-	position: relative;
-	width: 100%;
-	height: 100%;
-	margin: 0%;
-	background-color: white;
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
+@media screen and (max-width: 502px) {
+
+
+
+	.Image{
+		display: inline-block;
+		border: solid 0px red;
+		position: relative;
+		width: 60px;
+		height: 72px;
+		margin: 10px;
+		background-color: white;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+
+	.Image2{
+		display: inline-block;
+		border: solid 0px red;
+		position: relative;
+		width: 100%;
+		height: 100%;
+		margin: 0%;
+		background-color: white;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+
+
+	.Label{
+		position: absolute;               
+	    top: 0%;                         
+	/*    transform: translate(0, -50%);				*/
+	    text-align: center;
+		border: solid 0px red;
+		font-weight: bolder;
+		font-style: italic;
+		width: 100%;
+		height: 100%;
+		margin: 0%;
+		font-size: 0.5em;
+		background-color: rgba(160 , 240 , 180 , 0.6);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		display: none;
+	}
+
+	.back1{
+		position: fixed; z-index: 4; height: 11%; width: 99%; margin: 0px; top: 0%; background-color: #f3f3f3;
+		display: none;
+	}
+
+	.pointer{
+		display: block; position: relative; text-align: center; border: solid 0px blue; background-color: #DDD; z-index: 5;
+		top: 20px;
+	}
+
+	.spil{
+		display: block;
+	}
+
+	#celeb1{
+		overflow: auto; display: block; position: relative; border: solid 0px black; height: 90%; width: 100%; background-color: #FFF; top: 20px; left: 0%; z-index: 2;
+	}
+	#celeb2{
+		display: none; position: relative; border: solid 0px black; height: 90%; width: 100%; background-color: #FFF; top: 20px; left: 0%; z-index: 2;
+		overflow: auto;
+	}
+	.special{
+		font-weight: bold; font-size: 1.5em; display: block; border: solid 0px red; position: relative; top:23px ; z-index: 12;
+	}
+	#celeb3{
+		display: none; position: relative; border: solid 0px black; height: 90%; width: 100%; background-color: #FFF; top: 20px; left: 0%;  z-index: 2;
+		overflow: auto;
+	}
+	#complete{
+		height: 100%; width: 100%; position: absolute; top: 0%; z-index: 1; background-color: #FFF; 
+		display: none;
+	}
+	#footerf{
+		height: 7%; width: 100%; position: absolute; bottom: 0%; background-color: #f3f3f3; z-index: 4;
+	}
 }
-
-
-.Label{
-	position: absolute;               
-    top: 0%;                         
-//    transform: translate(0, -50%);
-    text-align: center;
-	border: solid 0px red;
-	font-weight: bolder;
-	font-style: italic;
-	width: 100%;
-	height: 100%;
-	margin: 0%;
-	background-color: rgba(160 , 240 , 180 , 0.6);
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	display: none;
-}
-

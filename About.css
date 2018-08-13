@@ -29,7 +29,12 @@
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	position: relative;
+	background-image: url("about.jpg");
 }
+#dn{
+	display: none;
+}
+
 
 }
 @media (max-width: 501px) and (orientation:portrait){
@@ -43,8 +48,24 @@
 }
 
 .Imageab{
-	height: 40%; width: 100%; left: 0%;
+	height: 35%; width: 100%; left: 0%;
 	display: block;
+	background-repeat: no-repeat;
+	background-size: 150% 100%;
+	background-image: url("about.jpg");	
+	background-position: center;
+}
+
+#dn{
+	z-index: 50;
+	display: block;
+	position: fixed;
+	bottom: 50px;
+	right: 5px;
+	height: 30px;
+	width: 25px;
+
+	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 }

@@ -2,6 +2,8 @@
 <html>
 <head>
 	<title>Listen Think Shout!</title>
+
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -24,8 +26,9 @@
 	        $(this).children(".Label").slideUp(1000);
 	    }
 	    );
+
 	
-	    var x=2;
+	     x=2;
 	    var t=0;
 	    var f=0;
 	    	$("#celeb"+(x%3+1)).fadeOut(500);
@@ -44,16 +47,17 @@ function test1(){
 	    	t=0;
 	    	f=0;
 	    }
-	   var t1 = setInterval(test1,8000);
+	   var t1 = setInterval(test1,15000);
 
 	    setInterval(function(){
+	    	if($(window).width()>502)
 	    	if (x%3+1!=1) {
-	    	$("#celeb"+(x%3+1)).css("top","-"+t+"%");
+	    	$("#celeb"+(x%3+1)).css("top","-"+t+"px");
 	    	if(f%2==0)
-	    		t++;
+	    		t+=4;
 	    	else
-	    		t--;
-	    	if (t>25||t<0) {
+	    		t-=4;
+	    	if (t>120||t<0) {
 	    		f++;
 	    	}
 	    }	
@@ -79,40 +83,172 @@ function test1(){
 	});	
 
 </script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var TP=0;
+			$(".tag").hover(function(){
+	        $(this).children(".image").css("display","none");
+	        $(this).children(".image2").css("display","inline-block");
+	    	} , 
 
-  <script type="text/javascript">
-    $(document).ready(function(){
-      $(".tag").hover(function(){
-          $(this).children(".image").css("display","none");
-          $(this).children(".image2").css("display","inline-block");
-        } , 
+	    function(){
+	        $(this).children(".image2").css("display","none");
+	        $(this).children(".image").css("display","inline-block");
+	    	}
+	    );
 
-      function(){
-          $(this).children(".image2").css("display","none");
-          $(this).children(".image").css("display","inline-block");
+			$(".menu_item").hover(function(){
+				$(this).css("background-color","#fff");
+			},
+			function(){
+				$(this).css("background-color","#f3f3f3");
+				//console.log("hell");
+			});
+
+
+		$(".menu_button").click( function () {
+			TP++;
+			$(".menu").slideToggle();
+			$(this).css("background-image","url('menu"+(TP%2+1)+".jpg')");
+			//console.log("uhui");
+		});
+
+		});
+
+	</script>
+
+
+
+<!-- Adding script to detect swipe               -->
+
+<script type="text/javascript">
+
+/*        touch                     */
+
+
+function swipedetect(el, callback){
+  
+    var touchsurface = el,
+    swipedir,
+    startX,
+    startY,
+    distX,
+    distY,
+    threshold = 100, //required min distance traveled to be considered swipe
+    restraint = 100, // maximum distance allowed at the same time in perpendicular direction
+    allowedTime = 500, // maximum time allowed to travel that distance
+    elapsedTime,
+    startTime,
+    handleswipe = callback || function(swipedir){}
+  
+    touchsurface.addEventListener('touchstart', function(e){
+        var touchobj = e.changedTouches[0]
+        swipedir = 'none'
+        dist = 0
+        startX = touchobj.pageX
+        startY = touchobj.pageY
+        startTime = new Date().getTime() // record time when finger first makes contact with surface
+        e.preventDefault()
+    }, false)
+  
+    touchsurface.addEventListener('touchmove', function(e){
+        e.preventDefault() // prevent scrolling when inside DIV
+    }, false)
+  
+    touchsurface.addEventListener('touchend', function(e){
+        var touchobj = e.changedTouches[0]
+        distX = touchobj.pageX - startX // get horizontal dist traveled by finger while in contact with surface
+        distY = touchobj.pageY - startY // get vertical dist traveled by finger while in contact with surface
+        elapsedTime = new Date().getTime() - startTime // get time elapsed
+        if (elapsedTime <= allowedTime){ // first condition for awipe met
+            if (Math.abs(distX) >= threshold && Math.abs(distY) <= restraint){ // 2nd condition for horizontal swipe met
+                swipedir = (distX < 0)? 'left' : 'right' // if dist traveled is negative, it indicates left swipe
+            }
+            else if (Math.abs(distY) >= threshold && Math.abs(distX) <= restraint){ // 2nd condition for vertical swipe met
+                swipedir = (distY < 0)? 'up' : 'down' // if dist traveled is negative, it indicates up swipe
+            }
         }
-      );
+        handleswipe(swipedir)
+        e.preventDefault()
+    }, false)
+}
 
-      $(".menu_item").hover(function(){
-        $(this).css("background-color","#fff");
-      },
-      function(){
-        $(this).css("background-color","#f3f3f3");
-        console.log("hell");
-      });
-    });
-  </script>
+
+
+/*
+
+touch detection function usage 
+
+*/
+
+
+
+window.addEventListener('load', function(){
+    var el = document.getElementByClassName('main')
+    swipedetect(el, function(swipedir){
+        if (swipedir == 'right'){
+            
+	    	$("#celeb"+(x%3+1)).fadeOut(500);
+	    	$("#"+(x%3+1)).css("background-color", "#BBB"	);
+	    	x++;
+	    	$("#celeb"+(x%3+1)).fadeIn(500);
+	    	$("#"+(x%3+1)).css("background-color", "blue"	);
+//	    	console.log(x);
+	    	t=0;
+	    	f=0;
+	    }
+        else if (swipedir == 'left') {
+        	x++;
+        	
+	    	$("#celeb"+(x%3+1)).fadeOut(500);
+	    	$("#"+(x%3+1)).css("background-color", "#BBB"	);
+	    	x++;
+	    	$("#celeb"+(x%3+1)).fadeIn(500);
+	    	$("#"+(x%3+1)).css("background-color", "blue"	);
+//	    	console.log(x);
+	    	t=0;
+	    	f=0;
+	    
+        }
+    })
+})
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </head>
 <body style="height: 99%; width: 99%; background-color: #f3f3f3;">
 
 	<div class="header" >
-		<div class="Imagex" style=" background-image: url(logos/logo.svg); border: solid 0px blue; background-color: #f3f3f3; ">	
+		<div class="Imagex" style=" background-image: url(logos/logo.svg); ">	
+		</div>
+
+		<div class="menu_button">
+			
 		</div>
 
 		<div class="menu" >
 			<div class="menu_item">
-		        <a href="Home.html"> HOME </a> 
+		        <a href="index.html"> HOME </a> 
 		    </div>
 		    <div class="menu_item" >
 		        <a href="About.html"> ABOUT </a> 
@@ -135,10 +271,10 @@ function test1(){
 		</div>
 	</div>
 
-<div style="position: fixed; z-index: 4; height: 11%; width: 99%; margin: 0px; top: 0%; background-color: #f3f3f3;"></div>
+<div class="back1"></div>
 	<div class="main" >
 
-	<div class="pointer" style="display: block; position: relative; text-align: center; border: solid 0px blue; background-color: #DDD; z-index: 5;">
+	<div class="pointer" >
   		
   		<span class="dot" id="1">
   			<input style="display: none" name="articleid" type="hidden" value=1 />
@@ -151,8 +287,8 @@ function test1(){
  		</span>
 
   	</div>
-  	<div id="celeb1" style="overflow: hidden; display: block; position: relative; border: solid 0px black; height: 90%; width: 100%; background-color: #FFF; top: 1%; left: 0%; z-index: 2;">
-  	<span style="font-weight: bold; font-size: 1.5em; display: block; border: solid 0px red; position: fixed; top: 15%; z-index: 12;"> SINGERS</span>  		
+  	<div id="celeb1" >
+  	<span class="special" > SINGERS<span class="spil"><br><br></span></span>  		
   		<div class="Image">
 			<div class="Image2" style="background-image: url('celeb/1.jpg');"></div>
 			<div class="Label">
@@ -220,8 +356,8 @@ function test1(){
 			</div>
 		</div>
   	</div>
-    <div id="celeb2" style="display: none; position: relative; border: solid 0px black; height: 90%; width: 100%; background-color: #FFF; top: 1%; left: 0%; z-index: 2;">
-  		<span style="font-weight: bold; font-size: 1.5em; display: block; border: solid 0px red; position: fixed; top: 15%; z-index: 12;"> Exclusive TV Celebrity - Female </span>
+    <div id="celeb2" style="display: none; ">
+  		<span class="special"> Exclusive TV Celebrity - Female <span class="spil"><br><br></span></span>
   		<div class="Image">
 			<div class="Image2" style="background-image: url('celeb/12.jpg');"></div>
 			<div class="Label">
@@ -356,8 +492,8 @@ function test1(){
 		</div>
 	</div>
 
-  	<div id="celeb3" style="display: none; position: relative; border: solid 0px black; height: 90%; width: 100%; background-color: #FFF; top: 15%; left: 0%;  z-index: 2;">
-  		<span style="font-weight: bold; font-size: 1.5em; display: block; border: solid 0px red; position: fixed; top: 15%; z-index: 12;"> Exclusive TV Celebrity - Male </span>
+  	<div id="celeb3" style="display: none;">
+  		<span class="special"> Exclusive TV Celebrity - Male<span class="spil"><br><br> </span>
   		<div class="Image">
 			<div class="Image2" style="background-image: url('celeb/34.jpg');"></div>
 			<div class="Label">
@@ -449,14 +585,16 @@ function test1(){
 			</div>
 		</div>
   	</div>
-  	<div id="complete" style="height: 100%; width: 100%; position: absolute; top: 0%; z-index: 1; background-color: #FFF; ">
+  	<div id="complete" >
   		
   	</div>
 </div>
 
 	<div class="footer" >
-			Copyright © 2017. Design by ListenThinkShout Communications	
-			<div class="social" >
+				<div class="txt">
+					Copyright © 2017<br> Design by ListenThinkShout Communications	
+				</div>
+				<div class="social" >
 				<div class="tag" >
 				<div class="image" style=" border: solid 0px red; background-image: url('logos/fb.jpg');" >
 				</div>
@@ -483,7 +621,7 @@ function test1(){
 				</div>
 			</div>
 	</div>	
-	<div id="footer" style="height: 7%; width: 100%; position: absolute; bottom: 0%; background-color: #f3f3f3; z-index: 4;"></div>
+	<div id="footerf" ></div>
 
 </body>
 </html>

@@ -35,7 +35,7 @@ height: 50%; width:98%; display: block; border: solid 0px red; position: relativ
 	font-size: 3em; font-weight: bold; height: 30%; width: 40%; position: absolute; border: solid 0px blue; top: 5%;
 }
 
-.txt{
+.txtf{
 	display: block; border: solid 0px black; height:60%; position: absolute; top: 40%; width: 40%;
 }
 
@@ -44,6 +44,10 @@ form{
 }
 
 .spil{
+	display: none;
+}
+
+#dn{
 	display: none;
 }
 
@@ -73,4 +77,18 @@ form{
 .spil{
 	display: block;
 }	
+#dn{
+	z-index: 50;
+	display: block;
+	position: fixed;
+	bottom: 50px;
+	right: 5px;
+	height: 30px;
+	width: 25px;
+
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
 }
