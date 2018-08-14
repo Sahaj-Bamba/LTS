@@ -27,7 +27,66 @@
 	    }
 	    );
 
-});
+$(".Image").click(function(){
+		
+		$(this).children(".Label").slideDown(2000);
+		$(this).children(".Label").slideUp(2000);
+
+	});
+	     x=2;
+	    var t=0;
+	    var f=0;
+	    	$("#celeb"+(x%3+1)).fadeOut(500);
+	    	$("#"+(x%3+1)).css("background-color", "#BBB"	);
+	    	x++;
+	    	$("#celeb"+(x%3+1)).fadeIn(500);
+	    	$("#"+(x%3+1)).css("background-color", "blue"	);
+	    	console.log(x);
+function test1(){
+	    	$("#celeb"+(x%3+1)).fadeOut(500);
+	    	$("#"+(x%3+1)).css("background-color", "#BBB"	);
+	    	x++;
+	    	$("#celeb"+(x%3+1)).fadeIn(500);
+	    	$("#"+(x%3+1)).css("background-color", "blue"	);
+//	    	console.log(x);
+	    	t=0;
+	    	f=0;
+	    }
+	   var t1 = setInterval(test1,15000);
+
+	    setInterval(function(){
+	    	if($(window).width()>502)
+	    	if (x%3+1!=1) {
+	    	$("#celeb"+(x%3+1)).css("top","-"+t+"px");
+	    	if(f%2==0)
+	    		t+=4;
+	    	else
+	    		t-=4;
+	    	if (t>120||t<0) {
+	    		f++;
+	    	}
+	    }	
+	    },100);
+	    $(".dot").click(function(){
+	    	var t=this;
+	    	clearInterval(t1);
+	    	$("#celeb"+(1)).fadeOut(50);
+	    	$("#celeb"+(2)).fadeOut(50);
+	    	$("#celeb"+(3)).fadeOut(50);
+	    	$("#celeb"+($(this).children('input[name=articleid]').val())).fadeIn(50);
+	    	$("#1").css("background-color", "#BBB"	);
+	    	$("#2").css("background-color", "#BBB"	);
+	    	$("#3").css("background-color", "#BBB"	);
+	    	$("#"+($(this).children('input[name=articleid]').val())).css("background-color", "blue"	);
+	    	t=0;
+	    	f=0;	
+			t1 = setInterval(test1,8000);	   
+			x= parseInt(($(this).children('input[name=articleid]').val()))+2;
+			console.log(x);
+	    });
+
+	});	
+
 </script>
 	<script type="text/javascript">
 		$(document).ready(function(){
@@ -83,12 +142,10 @@ function swipedetect(el, callback){
     threshold = 100, //required min distance traveled to be considered swipe
     restraint = 100, // maximum distance allowed at the same time in perpendicular direction
     allowedTime = 1500, // maximum time allowed to travel that distance
-    clicklength=60,	// point till which screen can be clicked
     elapsedTime,
     startTime,
     clickTime= 2000,
     handleswipe = callback || function(swipedir){}
-
   
     touchsurface.addEventListener('touchstart', function(e){
         var touchobj = e.changedTouches[0]
@@ -106,21 +163,12 @@ function swipedetect(el, callback){
         distX = touchobj.pageX - startX // get horizontal dist traveled by finger while in contact with surface
         distY = touchobj.pageY - startY // get vertical dist traveled by finger while in contact with surface
         elapsedTime = new Date().getTime() - startTime // get time elapsed
-        if (window.innerWidth>600) {
-        	clicklength=140;
-        }
         if (elapsedTime <= allowedTime){ // first condition for awipe met
             if (Math.abs(distX) >= threshold && Math.abs(distY) <= restraint){ // 2nd condition for horizontal swipe met
                 swipedir = (distX < 0)? 'left' : 'right' // if dist traveled is negative, it indicates left swipe
             }
             else if (Math.abs(distY) >= threshold && Math.abs(distX) <= restraint){ // 2nd condition for vertical swipe met
                 swipedir = (distY < 0)? 'up' : 'down' // if dist traveled is negative, it indicates up swipe
-            }
-            else if (startX<clicklength) {
-            	swipedir='clickleft'
-            }
-            else if (window.innerWidth-clicklength < startX) {
-            	swipedir='clickright'
             }
             else{
             	swipedir = 'click'
@@ -144,7 +192,7 @@ touch detection function usage
 */
 
 
-/*
+
 window.addEventListener('load', function(){
     var el = document.getElementById('celeb1')
     var e2 = document.getElementById('celeb2')
@@ -269,191 +317,18 @@ window.addEventListener('load', function(){
 
 
 })
-*/
-
-
-</script>
-
-
-
-
-<!--		enlargement on click effect  			-->
-
-
-<script type="text/javascript">
-	
-
-
-	$(document).ready(function(){
-		$(".Image").click(function(){
-			$(".enlarged").css("display","block");
-			$("#celeb1").css("display","none");
-			$("#celeb2").css("display","none");
-			$("#celeb3").css("display","none");
-			$(".enlarged").children(".special").html($(this).children(".Label").html());
-			$(".enlarged").children(".enlarged_img").css( "background-image",$(this).children(".Image2").css("background-image"));			
-			var imge=$(this).children(".Image2").css("background-image");
-
-
-//			add swipe and click to change effect
-
-
-var io = document.getElementsByClassName("Image2");
-var i;
-for (i = 0; i < io.length; i++) {
-    console.log(io[i].style.margin );
-}
-
-
-
-
-
-			
-			//console.log((.substring(($(this).children(".Image2").css("background-image")).split("").reverse().join("").indexof(".")+1,($(this).children(".Image2").css("background-image")).split("").reverse().join("").indexof("/"))).split("").reverse().join(""));
-
-names_celeb = [ "Mika Singh",
-			  "Mohit Chauhan",
-			  "KK",
-			  "Ankit Tiwari",
-			  "Sunidhi Chauhan",
-			  "Shirley Setia",
-			  "Suraj Jagan",
-			  "Javed Ali",
-			  "Jasmine Sandlas",
-			  "Neha Kakkar",
-			  "Gajendra Verma",
-			  "Rashami Desai",
-			  "Mouni Roy",
-			  "Ankita Lokhande",
-			  "Krystle D'souza",
-			  "Ada Khan",
-			  "Pooja Banerjee",
-			  "Dalljiet Kaur",
-			  "Sneha Ullal",
-			  "Preeti Jhangiani",
-			  "Madalsa Sharma",
-			  "Shiny Doshi",
-			  "Parul Chauhan",
-			  "Ankita Sharma",
-			  "Neha Pendse",
-			  "Sreejita De",
-			  "Lavina Tandon",
-			  "Sonal Vebgurlekar",
-			  "Monica Bedi",
-			  "Aarti Chabria",
-			  "Mahek Chahal",
-			  "Karishma Kotak",
-			  "Vidhi Pandya",
-			  "Karanvir Bohra",
-			  "Arjun Bijlani",
-			  "Karan Tacker",
-			  "Aamir Ali",
-			  "Balraj Syal",
-			  "Pearl V Puri",
-			  "Amit Tandon",
-			  "Gaurav Bajaj",
-			  "Manu Punjabi",
-			  "Eijaz Khan",
-			  "Ashmit Patel",
-			  "Shivin Narang",
-			  "Kripp Kapur Suri",
-			  "Avinash Mukherjee",
-			  "Kunal Vohra"
-
-
-
-			   ];
-
-    var e3 = document.getElementById('enl');
-
-			xi=imge.split("").reverse().join("");
-			yi=xi.indexOf(".")+1;
-			zi=xi.indexOf("/");
-			wi=xi.substring(yi,zi);
-			pi=parseInt(wi.split("").reverse().join(""));
-			console.log(pi);
- qi=xi.substring(0,yi)+pi.toString().split("").reverse().join("")+xi.substring(zi,xi.length);
-//console.log(q.split("").reverse().join(""));
-    swipedetect(e3, function(swipedir){
-    	var q;
-    	console.log(swipedir);
-        if (swipedir == 'right'||swipedir == 'clickleft'){
-            pi--;
-	    	if (pi<1) {
-	    		pi=48;
-	    	}
-	    	 q=xi.substring(0,yi)+pi.toString().split("").reverse().join("")+xi.substring(zi,xi.length);
-	    	 console.log(q);
-	    	 $(".enlarged").children(".enlarged_img").css("background-image",q.split("").reverse().join(""));
-	    	 $(".enlarged").children(".special").html(names_celeb[pi-1]);
-	    }
-        else if (swipedir == 'left'||swipedir == 'clickright') {
-        	pi++;
-        	if(pi>48)
-        		pi=1;
-	    	 q=xi.substring(0,yi)+pi.toString().split("").reverse().join("")+xi.substring(zi,xi.length);
-	    	 console.log(q);
-	    	 $(".enlarged_img").css("background-image",q.split("").reverse().join(""));
-	    	 $(".enlarged").children(".special").html(names_celeb[pi-1]);
-        }
-        else if (swipedir == 'click') {
-        		$(".enlarged").css("display","none");
-        		$("#celeb1").css("display","block");
-				$("#celeb2").css("display","block");
-				$("#celeb3").css("display","block");
-			
-        }
-    })
-});
-
-
-
-
-
-//  onclick function to change image
-
-
-$(".leftarrow").click(function(){
-		var q;
-        	pi--;
-        	if(pi<1)
-        		pi=48;
-	    	 q=xi.substring(0,yi)+pi.toString().split("").reverse().join("")+xi.substring(zi,xi.length);
-	    	 console.log(q);
-	    	 $(".enlarged_img").css("background-image",q.split("").reverse().join(""));
-	    	 $(".enlarged").children(".special").html(names_celeb[pi-1]);
-	    	 console.log(names_celeb[pi-1]);
-    
-});
-$(".rightarrow").click(function(){
-		var q;
-        	pi++;
-        	if(pi>48)
-        		pi=1;
-	    	 q=xi.substring(0,yi)+pi.toString().split("").reverse().join("")+xi.substring(zi,xi.length);
-	    	 console.log(q);
-	    	 $(".enlarged_img").css("background-image",q.split("").reverse().join(""));
-	    	 $(".enlarged").children(".special").html(names_celeb[pi-1]);
-    
-});
-$(".enlarged_img").click(function(){
-	    		$(".enlarged").css("display","none");
-        		$("#celeb1").css("display","block");
-				$("#celeb2").css("display","block");
-				$("#celeb3").css("display","block");
-	
-});
-
-
-
-
-
-
-});
 
 
 
 </script>
+
+
+
+
+
+
+
+
 
 
 
@@ -504,7 +379,7 @@ $(".enlarged_img").click(function(){
 	<div class="main" >
 <div class="back1"></div>
 
-	<div class="pointer" style="display: none;">
+	<div class="pointer" >
   		
   		<span class="dot" id="1">
   			<input style="display: none" name="articleid" type="hidden" value=1 />
@@ -515,13 +390,6 @@ $(".enlarged_img").click(function(){
  		<span class="dot" id="3">
  			<input style="display: none" name="articleid" type="hidden" value=3 />
  		</span>
-
-  	</div>
-  	<div class="enlarged" id="enl">
-  		<div class="special" style="text-align: center;">	</div>
-  		<div class="enlarged_img">  			</div>
-  		<div class="leftarrow"> </div>
-  		<div class="rightarrow"> </div>
 
   	</div>
   	<div id="celeb1" >
@@ -800,7 +668,7 @@ $(".enlarged_img").click(function(){
 		<div class="Image">
 			<div class="Image2" style="background-image: url('celeb/45.jpg');"></div>
 			<div class="Label">
-				Shivin Narang
+				Shivn Narang
 			</div>
 		</div>
 		<div class="Image">
@@ -818,7 +686,7 @@ $(".enlarged_img").click(function(){
 		<div class="Image">
 			<div class="Image2" style="background-image: url('celeb/48.jpg');"></div>
 			<div class="Label">
-				Kunal Vohra
+				Kunal Vohral
 			</div>
 		</div>
   	</div>
