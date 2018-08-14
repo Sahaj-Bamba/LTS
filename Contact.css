@@ -51,6 +51,23 @@ form{
 	display: none;
 }
 
+
+.socialc{
+	text-align: left; height: 100%; top:0%; width: 100%; position: absolute;  display: block;  
+}
+
+.footerc{
+	position: relative; left: 0px; height: 30px; display: block; border: solid 0px blue; width: 100%; background-color: #fff; z-index: 5;
+	font-size: 0.75em;
+
+}
+
+.tagc{
+	height: 30px; width: 30px; display: inline-block;
+	background-size: 30px 30px;
+	margin-right: 5px;
+}
+
 }
 
 @media screen and (max-width: 502px){
@@ -90,5 +107,25 @@ form{
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 }
+
+
+
+
+.socialc{
+	text-align: left; height: 100%; top:0%; width: 100%; position: absolute;  display: block; right: 10%; 
+}
+
+.footerc{
+	position: relative; left: 20%; height: 30px; display: block; border: solid 0px blue; width: 100%; background-color: #f3f3f3; z-index: 5;
+	font-size: 0.75em;
+
+}
+
+.tagc{
+	height: 30px; width: 30px; display: inline-block;
+	background-size: 30px 30px;
+	margin-right: 10px;
+}
+
 
 }

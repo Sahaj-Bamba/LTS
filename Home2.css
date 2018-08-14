@@ -8,7 +8,7 @@
 }
 
 .social{
-	text-align: right; height: 100%; width: 100%; position: absolute; top: -25%; display: block; right: 10%; 
+	text-align: right; height: 100%; width: 100%; position: absolute; top: -25%; display: none; right: 10%; 
 }
 
 .footer{
@@ -17,6 +17,7 @@
 
 .main{
 	position: fixed; height: 82%; width: 90%; left: 5%; top: 11%; display: block; border: solid 0px black; z-index: 3;
+	overflow: auto;
 }
 
 .menu_item{
@@ -62,7 +63,8 @@
 }
 
 .social{
-	text-align: right; height: 100%; top:0%; width: 100%; position: absolute;  display: block; right: 10%; 
+
+	text-align: right; height: 100%; top:0%; width: 100%; position: absolute;  display: none; right: 10%; 
 }
 
 .txt{
