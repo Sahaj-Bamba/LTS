@@ -1,0 +1,159 @@
+
+
+@media screen and (min-width:900px){
+
+
+	.main{
+		background-color: #fff;
+	}
+
+
+	.txt{
+		display: none;
+		height: 100%;
+		width: 100%;
+		text-align: center;
+		align-self: center;
+		vertical-align: middle;
+		font-size: 1em;
+		font-weight: bolder;
+		font-size: 1em;
+		overflow: hidden;
+	}
+
+
+	.left1,.left3,.right1,.right3{
+		display: inline-block;
+		border: solid 0px red;
+		width: 200px;
+		height: 300px;
+		position: relative;
+		background-color: white;
+	}
+
+	.middle1,.middle3{
+		display: inline-block;
+		border: solid 0px blue;
+		width: 400px;
+		height: 300px;
+		position: relative;
+		background-color: white;
+	}
+
+	.pic{
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	.left1{
+		display: inline-block;
+	}
+	.middle1{
+		display: inline-block;
+		overflow: hidden;
+	}
+	.right1{
+		display: inline-block;
+
+	}
+	.left2{
+		display: inline-block;
+		height: 200px;
+		width: 200px;
+		position: relative;
+		top: -10%;
+	}
+	.smaller{
+		font-size: 1em;
+		font-weight: normal;
+		height: 50%;
+	}
+	.middle2{
+		display: inline-block;
+		position: relative;
+		height: 200px;
+		width: 400px;
+	}
+	.right2{
+		display: inline-block;
+	}
+	.left3{
+		display: inline-block;
+	}
+	.motion_print{
+		display: inline-block;
+		position: relative;
+		height: 150px;
+		width: 200px;
+	}
+	.middle3{
+		display: none;
+	}
+	.right3{
+		display: none;
+	}
+	.pic1{
+		display: inline-block;
+		width: 200px;
+		height: 300px;
+		background-size: 200px 267px;
+		background-color: #ffeed0;
+	}
+	.pic2{
+		display: inline-block;
+		width: 400px;
+		height: 300px;
+		background-color: #fff;
+		background-size: 400px 110px;
+		background-position: center;
+	}
+	.pic3{
+		display: inline-block;
+		width: 200px;
+		height: 200px;
+		background-color: #ff6633;
+	}
+	.pic4{
+		display: inline-block;
+		width: 200px;
+		height: 200px;
+		background-position: center;
+		background-size: 200px 200px;
+	}
+	.pic5{
+		display: inline-block;
+		width: 200px;
+		height: 200px;
+		background-position: center;
+		background-size: 200px 200px;
+	}
+	.pic6{
+		display: inline-block;
+		width: 200px;
+		height: 150px;
+		background-image: 200px 150px;
+	}
+	.Services{
+		display: inline-block;
+		position: absolute;
+		right: 0px;
+		top: 40%;
+		height: 200px;
+		vertical-align: middle;
+		width: 200px;
+		margin-top: auto;
+		margin-bottom: auto;
+	}
+	.about{
+		height: 100px;
+		width: 200px;
+		vertical-align: middle;
+		overflow: hidden;
+	}
+	.public_awards{
+		height: 200px;
+		width: 200px;
+	}
+
+}

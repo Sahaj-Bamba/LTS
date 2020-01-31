@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Listen Think Shout!</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="links.css">
+	<link rel="stylesheet" type="text/css" href="home.css">
+ 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="Home2.css">
+	<link rel="stylesheet" type="text/css" href="About2.css">
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var TP=0;
+			$(".tag").hover(function(){
+	        $(this).children(".image").css("display","none");
+	        $(this).children(".image2").css("display","inline-block");
+	    	} , 
+
+	    function(){
+	        $(this).children(".image2").css("display","none");
+	        $(this).children(".image").css("display","inline-block");
+	    	}
+	    );
+
+			$(".menu_item").hover(function(){
+				$(this).css("background-color","#fff");
+			},
+			function(){
+				$(this).css("background-color","#f3f3f3");
+				//console.log("hell");
+			});
+
+
+		$(".menu_button").click( function () {
+			TP++;
+			$(".menu").slideToggle();
+			$(this).css("background-image","url('menu"+(TP%2+1)+".jpg')");
+			//console.log("uhui");
+		});
+
+		});
+
+	</script>
+</head>
+
+<body style="height: 99%; width: 99%; background-color: #f3f3f3;">
+
+	<div class="header" >
+		<div class="Imagex" style=" background-image: url(logos/logo.svg); border: solid 0px blue; background-color: #f3f3f3; ">	
+		</div>
+		<div class="menu_button">
+			
+		</div>
+		<div class="menu">
+			<div class="menu_item">
+		        <a href="index.html"> HOME </a> 
+		    </div>
+		    <div class="menu_item" >
+		        <a href="About.html"> ABOUT </a> 
+		    </div>
+		    <div class="menu_item">
+		        <a href="Services.html"> SERVICES </a>
+		    </div>
+		    <div class="menu_item">
+		    	<a href="Celeb.html"> CELEBRITY </a>
+		    </div>
+		    <div class="menu_item">
+		        <a href="Portfolio.html"> PORTFOLIO </a>
+		    </div>
+		    <div class="menu_item" >
+		        <a href="Blog.html"> BLOG </a>
+		    </div>
+		    <div class="menu_item" >
+		        <a href="Contact.html"> CONTACT </a>
+		    </div>
+		</div>
+	</div>
+	<div class="main" >
+		
+      <div id="dn" style="  background-image: url('down3.svg');">
+        
+      </div>  
+		<div class="Imageab" >
+		</div>
+		<div class="content" >
+			<br>
+			A communications agency that offers brand promotion solutions through focused advertising, location-based events and category-defining brand properties. We workon the simple philosophy of 'Listen, Think and Shout' - listening to the problems (of the business and the consumers), thinking of solutions (focused on the brand's needs) and shouting (to amplify the brand voice) for the maximum impact.
+			<br><br>
+			<span class="special" > OUR DOMAIN COVERS: </span>
+			<br>
+			Everything from direct marketing solutions to a mass media campaign
+			Providing creative/ logistical event support to creating and executing a novel event property for your brand.
+			All media production services like Stills and Videos, Branding Material, TVCs, Graphics etc.
+			<br><br>
+			<span class="special"> OUR SERVICES ARE FOR: </span> <br>
+			Anyone who is looking for creative and relevant communication/ event solutions
+			from a small budget brand to a big budget corporate.
+			<br><br>
+			<span class="special"> OUR REACH: </span> <br>
+			We have a strong network across metros as well as Tier-I, Tier-II cities.
+			<br><br>
+			<span class="special"> OUR USP: </span> <br>
+			A long and impressive list of artists/ performers including DJs, Playback Singers and even stand-up comedians.
+			We have organized and managed several small and big stage musical nights across India with a special expertise in holding Live Performances.
+			<br>
+		</div>
+
+	</div>
+
+	<div class="footer" >
+		<div class="txt">
+			Copyright © 2017<br> Design by ListenThinkShout Communications	
+		</div>
+			<div class="social" >
+				<div class="tag" >
+				<div class="image" style=" border: solid 0px red; background-image: url('logos/fb.jpg');" >
+				</div>
+				<div class="image2" style=" border: solid 0px red; background-image: url('logos/fb2.jpg');">
+				</div>
+				</div>
+				<div class="tag" >
+				<div class="image" style="background-image: url('logos/twitter.jpg'); " >
+				</div>
+				<div class="image2" style=" border: solid 0px red; background-image: url('logos/twitter2.jpg'); ">
+				</div>
+				</div>
+				<div class="tag" >
+				<div class="image" style=" border: solid 0px red; background-image: url('logos/instagram.png'); " >
+				</div>
+				<div class="image2" style=" border: solid 0px red; background-image: url('logos/instagram2.png'); ">
+				</div>
+				</div>
+				<div class="tag" >
+				<div class="image" style=" border: solid 0px red; background-image: url('logos/youtube.png'); " >
+				</div>
+				<div class="image2" style=" border: solid 0px red; background-image: url('logos/youtube2.png'); ">
+				</div>
+				</div>
+			</div>
+	</div>
+</body>
+</html>

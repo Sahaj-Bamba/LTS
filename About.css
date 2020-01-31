@@ -11,64 +11,189 @@
     display: none; 
 }
 
-@media screen and (min-width: 502px)
-{
-	
 
-.content{
-	position: relative; width: 80%; height: 50%;  left: 10%; border: solid 0px red; overflow: scroll;
+@media screen and (max-width: 550px){
+
+	.abtspecial{
+		display: block;
+		text-align: center;
+		font-size: 1.2em;
+	}
+
+	.abtcontent{
+		display: block;
+		position: relative;
+		background-color: #fff;
+		height: auto;
+		min-height: 100%;
+		text-align: center;
+		overflow: auto;
+	}
+
+	.abtimg1{
+		display: block;
+		position: relative;
+		top: 30px;
+		background-repeat: no-repeat;
+		width: 300px;
+		height: 100px;
+		background-size: 100%;
+		border: solid 0px blue;
+		background-color: #fff;
+		align-self: center;
+		text-align: center;
+	}
+
+	.abtimg2{
+		display: block;
+		position: relative;
+		top: 60px;
+		background-repeat: no-repeat;
+		width: 300px;
+		height: 180px;
+		background-size: auto 100%;
+		text-align: center;
+		align-self: center;
+		right: 30px;
+		border: solid 0px blue;
+		background-color: #fff;
+	}
+
+	.abttxt{
+		display: block;
+		position: relative;
+		top: 40px;
+		border: solid 0px red;
+		background-color: #fff;
+		font-size: 0.8em;
+		width: 300px;
+		height: auto;
+		text-align: left;
+	}
+
 }
 
-.special{
-	font-weight: bolder; font-size: 1.2em;
+
+@media screen and (min-width: 550px){
+
+	.abtspecial{
+		display: block;
+		text-align: center;
+		font-size: 1.5em;
+	}
+
+	.abtcontent{
+		display: block;
+		position: relative;
+		background-color: #fff;
+		height: auto;
+		min-height: 100%;
+		text-align: center;
+		overflow: auto;
+	}
+
+	.abtimg1{
+		display: block;
+		position: relative;
+		top: 30px;
+		background-repeat: no-repeat;
+		width: 600px;
+		height: 170px;
+		background-size: 100%;
+		border: solid 0px blue;
+		background-color: #fff;
+		align-self: center;
+		text-align: center;
+	}
+
+	.abtimg2{
+		display: block;
+		position: relative;
+		top: 60px;
+		background-repeat: no-repeat;
+		width: 600px;
+		height: 300px;
+		background-size: auto 100%;
+		text-align: center;
+		align-self: center;
+		border: solid 0px blue;
+		background-color: #fff;
+	}
+
+	.abttxt{
+		display: block;
+		position: relative;
+		top: 40px;
+		border: solid 0px red;
+		background-color: #fff;
+		font-size: 1.1em;
+		width: 600px;
+		height: auto;
+		text-align: left;
+	}
+
 }
 
-.Imageab{
-
-	height: 50%; width: 80%; left: 10%;
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	position: relative;
-	background-image: url("about.jpg");
-}
-#dn{
-	display: none;
-}
 
 
-}
-@media (max-width: 501px) and (orientation:portrait){
 
-.content{
-	position: relative; width: 100%; height: 60%;  left: 0%; border: solid 0px red; overflow: scroll;
-}
+@media screen and (min-width: 900px){
 
-.special{
-	font-weight: bolder; font-size: 1.2em;
-}
+	.abtcontent{
+		display: block;
+		position: relative;
+		background-color: #fff;
+		height: auto;
+		min-height: 100%;
+		text-align: center;
+		overflow: auto;
+	}
 
-.Imageab{
-	height: 35%; width: 100%; left: 0%;
-	display: block;
-	background-repeat: no-repeat;
-	background-size: 150% 100%;
-	background-image: url("about.jpg");	
-	background-position: center;
-}
+	.abtimg1{
+		display: block;
+		position: relative;
+		top: 30px;
+		background-repeat: no-repeat;
+		width: 900px;
+		height: 300px;
+		background-size: 100%;
+		border: solid 0px blue;
+		background-color: #fff;
+		align-self: center;
+		text-align: center;
+	}
 
-#dn{
-	z-index: 50;
-	display: block;
-	position: fixed;
-	bottom: 50px;
-	right: 5px;
-	height: 30px;
-	width: 25px;
+	.abtimg2{
+		display: block;
+		position: relative;
+		top: 60px;
+		right: 100px;
+		background-repeat: no-repeat;
+		width: 900px;
+		height: 540px;
+		background-size: auto 100%;
+		text-align: center;
+		align-self: center;
+		border: solid 0px blue;
+		background-color: #fff;
+	}
 
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-}
+	.abttxt{
+		display: block;
+		position: relative;
+		top: 40px;
+		border: solid 0px red;
+		background-color: #fff;
+		font-size: 1.3em;
+		width: 900px;
+		height: auto;
+		text-align: left;
+	}
 
+	.abtspecial{
+		display: block;
+		text-align: center;
+		font-size: 1.8em;
+	}
 
 }

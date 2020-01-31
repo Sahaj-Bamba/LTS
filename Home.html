@@ -16,6 +16,7 @@
 
 	<script type="text/javascript">
 		$(document).ready(function(){
+			//$(".spinload").css("display","none");
 			var TP=0;
 			$(".tag").hover(function(){
 	        $(this).children(".image").css("display","none");
@@ -48,7 +49,12 @@
 
 	</script>
 </head>
-<body style="height: 99%; width: 99%; background-color: #f3f3f3;">
+<body style="height: 99%; width: 99%; background-color: #f3f3f3; overflow: hidden;">
+
+	<div id="spinload" style="background-color: #eee; height: 1000px; width: 1000px; z-index: 1000000000;" >
+		<div class="gif" style="background-size: auto; height: 100%; width: 100%;">
+		</div>
+	</div>
 
 	<div class="header" >
 		<div class="Imagex" style=" background-image: url(logos/logo.svg); border: solid 0px blue; background-color: #f3f3f3; ">	
@@ -82,6 +88,8 @@
 	</div>
 
 	<div class="main" >
+
+
 
 	</div>
 

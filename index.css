@@ -1,0 +1,1205 @@
+@media screen and (max-width:670px){
+
+	.main{
+		background-color: #eee;
+	}
+
+	.allmight{
+		display: inline-block;
+		width: 400px;
+		height: 1600px;
+		position: relative;
+		align-self: center;
+		background-color: #fff;
+	}
+
+	.txt{
+		display: none;
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		text-align: center;
+		align-self: center;
+		vertical-align: middle;
+		font-size: 1.2em;
+		font-weight: bolder;
+		overflow: hidden;
+	}
+
+	.pic{
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	.left1{
+		display: block;
+		position: absolute;
+		height: 300px;
+		width: 200px;
+		top: 0px;
+		left: 0px;
+	}
+	.pic1{
+		display: block;
+		width: 200px;
+		height: 300px;
+		background-size: 200px 267px;
+		background-color: #ffeed0;
+	}
+
+	.middle1{
+		display: block;
+		overflow: hidden;
+		position: absolute;
+		height: 300px;
+		width: 400px;
+		top: 300px;
+		left: 0px;
+	}
+	.pic2{
+		display: block;
+		width: 400px;
+		height: 300px;
+		background-color: #fff;
+		background-size: 400px 110px;
+		background-position: center;
+	}
+
+	.right1{
+		display: block;
+		overflow: hidden;
+		position: absolute;
+		height: 300px;
+		width: 200px;
+		top: 0px;
+		right: 0px;
+	}
+	.pic3{
+		display: block;
+		width: 200px;
+		height: 200px;
+		background-color: #ff6633;
+		background-size: 200px 200px;
+	}
+	.about{
+		height: 100px;
+		width: 200px;
+		vertical-align: middle;
+		overflow: hidden;
+		position: absolute;
+		top: 240px;
+		right: 0px;
+	}
+
+	.left2{
+		display: inline-block;
+		height: 200px;
+		width: 200px;
+		position: absolute;
+		top: 600px;
+		left: 0px;
+		padding: auto;
+	}
+	.smaller{
+		font-size: 1em;
+		font-weight: normal;
+		height: 50%;
+	}
+
+	.middle2{
+		display: block;
+		position: absolute;
+		top: 800px;
+		left: 0px;
+		height: 200px;
+		width: 400px;
+	}
+	
+	.public_awards{
+		display: block;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		height: 200px;
+		width: 200px;
+	}
+	.pic4{
+		display: block;
+		width: 200px;
+		height: 200px;
+		background-position: center;
+		background-size: 200px 200px;
+	}
+	.Services{
+		display: block;
+		width: 200px;
+		height: 200px;
+		position: absolute;
+		left: 200px;
+		top: 47%;
+	}
+
+	.right2{
+		display: block;
+		position: absolute;
+		width: 200px;
+		height: 200px;
+		top: 600px;
+		right: 0px;
+	}
+	.pic5{
+		display: block;
+		width: 200px;
+		height: 200px;
+		background-position: center;
+		background-size: 200px 200px;
+	}
+
+	.left3{
+		display: block;
+		width: 200px;
+		height: 300px;
+		position: absolute;
+		top: 1000px;
+		left: 0px;
+	}
+	.motion_print{
+		display: block;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		height: 150px;
+		width: 200px;
+	}
+	.pic6{
+		display: inline-block;
+		width: 200px;
+		height: 150px;
+		background-image: 200px 150px;
+	}
+	.contactt{
+		display: block;
+		position: absolute;
+		width: 200px;
+		height: 150px;
+		top: 222px;
+		left: 0px;
+	}
+
+	.middle3{
+		display: block;
+		position: absolute;
+		top: 1300px;
+		left: 0px;
+		height: 300px;
+		width: 400px;
+	}
+	.pic7{
+		display: block;
+		background-color: #ffeed0;
+		width: 400px;
+		height: 300px;
+		background-position: center;
+		background-size: 361px 289px;
+	}
+
+	.right3{
+		display: block;
+		position: absolute;
+		top: 1000px;
+		right: 0px;
+		width: 200px;
+		height: 300px;
+		overflow: hidden;
+	}
+ 	.txt7{
+ 		display: block;
+ 		width: 200px;
+ 		height: 150px;
+ 		position: absolute;
+ 		top: 24%;
+ 		left: 0px;
+ 	}
+ 	.clock{
+ 		display: block;
+ 		width: 300px;
+ 		height: 150px;
+ 		position: absolute;
+ 		top: 150px;
+ 		left: 25px;
+ 		border: solid 0px red;
+ 	}
+
+}
+
+@media screen and (max-width: 400px){
+	.splt{
+		display: none;
+	}
+	.menu_item{
+		margin: 0px;
+	}
+	.main{
+		background-color: #eee;
+	}
+
+	.allmight{
+		background-color: #fff;
+		display: inline-block;
+		width: 300px;
+		height: 1200px;
+		position: relative;
+		align-self: center;
+	}
+
+	.txt{
+		display: none;
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		text-align: center;
+		align-self: center;
+		vertical-align: middle;
+		font-size: 1.2em;
+		font-weight: bolder;
+		overflow: hidden;
+	}
+
+	.pic{
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	.left1{
+		display: block;
+		position: absolute;
+		height: 250px;
+		width: 150px;
+		top: 0px;
+		left: 0px;
+	}
+	.pic1{
+		display: block;
+		width: 150px;
+		height: 250px;
+		background-size: 150px 200px;
+		background-color: #ffeed0;
+		background-position: center;
+	}
+
+	.middle1{
+		display: block;
+		overflow: hidden;
+		position: absolute;
+		height: 250px;
+		width: 300px;
+		top: 250px;
+		left: 0px;
+	}
+	.pic2{
+		display: block;
+		width: 300px;
+		height: 250px;
+		background-color: #fff;
+		background-size: 300px 83px;
+		background-position: center;
+	}
+
+	.right1{
+		display: block;
+		overflow: hidden;
+		position: absolute;
+		height: 250px;
+		width: 150px;
+		top: 0px;
+		right: 0px;
+	}
+	.pic3{
+		display: block;
+		width: 150px;
+		height: 150px;
+		background-color: #ff6633;
+		background-size: 150px 150px;
+	}
+	.about{
+		height: 100px;
+		width: 150px;
+		vertical-align: middle;
+		overflow: hidden;
+		position: absolute;
+		top: 190px;
+		right: 0px;
+	}
+
+	.left2{
+		display: inline-block;
+		height: 150px;
+		width: 150px;
+		position: absolute;
+		top: 500px;
+		left: 0px;
+		padding: auto;
+	}
+	.smaller{
+		font-size: 1em;
+		font-weight: normal;
+		height: 50%;
+	}
+
+	.middle2{
+		display: block;
+		position: absolute;
+		top: 650px;
+		left: 0px;
+		height: 150px;
+		width: 300px;
+	}
+	
+	.public_awards{
+		display: block;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		height: 150px;
+		width: 150px;
+	}
+	.pic4{
+		display: block;
+		width: 150px;
+		height: 150px;
+		background-position: center;
+		background-size: 150px 150px;
+	}
+	.Services{
+		display: block;
+		width: 150px;
+		height: 150px;
+		position: absolute;
+		left: 150px;
+		top: 47%;
+	}
+
+	.right2{
+		display: block;
+		position: absolute;
+		width: 150px;
+		height: 150px;
+		top: 500px;
+		right: 0px;
+	}
+	.pic5{
+		display: block;
+		width: 150px;
+		height: 150px;
+		background-position: center;
+		background-size: 150px 150px;
+	}
+
+	.left3{
+		display: block;
+		width: 150px;
+		height: 250px;
+		position: absolute;
+		top: 800px;
+		left: 0px;
+		background-color: #fff;
+	}
+	.motion_print{
+		display: block;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		height: 120px;
+		width: 150px;
+	}
+	.pic6{
+		display: inline-block;
+		width: 150px;
+		height: 120px;
+		background-image: 150px 120px;
+	}
+	.contactt{
+		display: block;
+		position: absolute;
+		width: 150px;
+		height: 130px;
+		top: 180px;
+		left: 0px;
+	}
+
+	.middle3{
+		display: block;
+		position: absolute;
+		top: 1050px;
+		left: 0px;
+		height: 250px;
+		width: 300px;
+	}
+	.pic7{
+		display: block;
+		background-color: #ffeed0;
+		width: 300px;
+		height: 250px;
+		background-position: center;
+		background-size: 300px 240px;
+	}
+
+	.right3{
+		display: block;
+		position: absolute;
+		top: 800px;
+		right: 0px;
+		width: 150px;
+		height: 250px;
+		overflow: hidden;
+	}
+ 	.txt7{
+ 		display: block;
+ 		width: 150px;
+ 		height: 120px;
+ 		position: absolute;
+ 		top: 17%;
+ 		left: 0px;
+ 	}
+ 	.clock{
+ 		display: block;
+ 		width: 300px;
+ 		height: 150px;
+ 		position: absolute;
+ 		top: 100px;
+ 		left: 0px;
+ 		border: solid 0px red;
+ 	}
+
+
+}
+
+@media screen and (min-width:670px){
+
+	.menu_item{
+		margin: 0px;
+	}
+	.main{
+		background-color: #eee;
+	}
+
+	.allmight{
+		background-color: #fff;
+		display: inline-block;
+		width: 600px;
+		height: 600px;
+		position: relative;
+		align-self: center;
+	}
+
+	.txt{
+		display: none;
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		text-align: center;
+		align-self: center;
+		vertical-align: middle;
+		font-size: 1.2em;
+		font-weight: bolder;
+		overflow: hidden;
+	}
+
+	.pic{
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	.left1{
+		display: block;
+		position: absolute;
+		height: 250px;
+		width: 150px;
+		top: 0px;
+		left: 0px;
+	}
+	.pic1{
+		display: block;
+		width: 150px;
+		height: 250px;
+		background-size: 150px 200px;
+		background-color: #ffeed0;
+		background-position: center;
+	}
+
+	.middle1{
+		display: block;
+		overflow: hidden;
+		position: absolute;
+		height: 250px;
+		width: 300px;
+		top: 0px;
+		left: 150px;
+	}
+	.pic2{
+		display: block;
+		width: 300px;
+		height: 250px;
+		background-color: #fff;
+		background-size: 300px 83px;
+		background-position: center;
+	}
+
+	.right1{
+		display: block;
+		overflow: hidden;
+		position: absolute;
+		height: 250px;
+		width: 150px;
+		top: 0px;
+		right: 0px;
+	}
+	.pic3{
+		display: block;
+		width: 150px;
+		height: 150px;
+		background-color: #ff6633;
+		background-size: 150px 150px;
+	}
+	.about{
+		height: 100px;
+		width: 150px;
+		vertical-align: middle;
+		overflow: hidden;
+		position: absolute;
+		top: 190px;
+		right: 0px;
+	}
+
+	.left2{
+		display: inline-block;
+		height: 150px;
+		width: 150px;
+		position: absolute;
+		top: 250px;
+		left: 0px;
+		padding: auto;
+	}
+	.smaller{
+		font-size: 1em;
+		font-weight: normal;
+		height: 50%;
+	}
+
+	.middle2{
+		display: block;
+		position: absolute;
+		top: 250px;
+		left: 150px;
+		height: 150px;
+		width: 300px;
+	}
+	
+	.public_awards{
+		display: block;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		height: 150px;
+		width: 150px;
+	}
+	.pic4{
+		display: block;
+		width: 150px;
+		height: 150px;
+		background-position: center;
+		background-size: 150px 150px;
+	}
+	.Services{
+		display: block;
+		width: 150px;
+		height: 150px;
+		position: absolute;
+		left: 150px;
+		top: 47%;
+	}
+
+	.right2{
+		display: block;
+		position: absolute;
+		width: 150px;
+		height: 150px;
+		top: 250px;
+		right: 0px;
+	}
+	.pic5{
+		display: block;
+		width: 150px;
+		height: 150px;
+		background-position: center;
+		background-size: 150px 150px;
+	}
+
+	.left3{
+		display: block;
+		width: 150px;
+		height: 250px;
+		position: absolute;
+		top: 400px;
+		left: 0px;
+		background-color: #fff;
+	}
+	.motion_print{
+		display: block;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		height: 120px;
+		width: 150px;
+	}
+	.pic6{
+		display: inline-block;
+		width: 150px;
+		height: 120px;
+		background-image: 150px 120px;
+	}
+	.contactt{
+		display: block;
+		position: absolute;
+		width: 150px;
+		height: 130px;
+		top: 180px;
+		left: 0px;
+	}
+
+	.middle3{
+		display: block;
+		position: absolute;
+		top: 400px;
+		left: 150px;
+		height: 250px;
+		width: 300px;
+	}
+	.pic7{
+		display: block;
+		background-color: #ffeed0;
+		width: 300px;
+		height: 250px;
+		background-position: center;
+		background-size: 300px 240px;
+	}
+
+	.right3{
+		display: block;
+		position: absolute;
+		top: 400px;
+		right: 0px;
+		width: 150px;
+		height: 250px;
+		overflow: hidden;
+	}
+ 	.txt7{
+ 		display: block;
+ 		width: 150px;
+ 		height: 120px;
+ 		position: absolute;
+ 		top: 17%;
+ 		left: 0px;
+ 	}
+ 	.clock{
+ 		display: block;
+ 		width: 300px;
+ 		height: 150px;
+ 		position: absolute;
+ 		top: 100px;
+ 		left: 0px;
+ 		border: solid 0px red;
+ 	}
+
+}
+
+
+@media screen and (min-width:900px){
+
+
+	.main{
+		background-color: #eee;
+	}
+
+	.allmight{
+		display: inline-block;
+		width: 800px;
+		height: 800px;
+		position: relative;
+		align-self: center;
+		background-color: #fff;
+	}
+
+	.txt{
+		display: none;
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		text-align: center;
+		align-self: center;
+		vertical-align: middle;
+		font-size: 1.2em;
+		font-weight: bolder;
+		overflow: hidden;
+	}
+
+	.pic{
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	.left1{
+		display: block;
+		position: absolute;
+		height: 300px;
+		width: 200px;
+		top: 0px;
+		left: 0px;
+	}
+	.pic1{
+		display: block;
+		width: 200px;
+		height: 300px;
+		background-size: 200px 267px;
+		background-color: #ffeed0;
+	}
+
+	.middle1{
+		display: block;
+		overflow: hidden;
+		position: absolute;
+		height: 300px;
+		width: 400px;
+		top: 0px;
+		left: 200px;
+	}
+	.pic2{
+		display: block;
+		width: 400px;
+		height: 300px;
+		background-color: #fff;
+		background-size: 400px 110px;
+		background-position: center;
+	}
+
+	.right1{
+		display: block;
+		overflow: hidden;
+		position: absolute;
+		height: 300px;
+		width: 200px;
+		top: 0px;
+		right: 0px;
+	}
+	.pic3{
+		display: block;
+		width: 200px;
+		height: 200px;
+		background-color: #ff6633;
+		background-size: 200px 200px;
+	}
+	.about{
+		height: 100px;
+		width: 200px;
+		vertical-align: middle;
+		overflow: hidden;
+		position: absolute;
+		top: 240px;
+		right: 0px;
+	}
+
+	.left2{
+		display: inline-block;
+		height: 200px;
+		width: 200px;
+		position: absolute;
+		top: 300px;
+		left: 0px;
+		padding: auto;
+	}
+	.smaller{
+		font-size: 1em;
+		font-weight: normal;
+		height: 50%;
+	}
+
+	.middle2{
+		display: block;
+		position: absolute;
+		top: 300px;
+		left: 200px;
+		height: 200px;
+		width: 400px;
+	}
+	
+	.public_awards{
+		display: block;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		height: 200px;
+		width: 200px;
+	}
+	.pic4{
+		display: block;
+		width: 200px;
+		height: 200px;
+		background-position: center;
+		background-size: 200px 200px;
+	}
+	.Services{
+		display: block;
+		width: 200px;
+		height: 200px;
+		position: absolute;
+		left: 200px;
+		top: 47%;
+	}
+
+	.right2{
+		display: block;
+		position: absolute;
+		width: 200px;
+		height: 200px;
+		top: 300px;
+		right: 0px;
+	}
+	.pic5{
+		display: block;
+		width: 200px;
+		height: 200px;
+		background-position: center;
+		background-size: 200px 200px;
+	}
+
+	.left3{
+		display: block;
+		width: 200px;
+		height: 300px;
+		position: absolute;
+		top: 500px;
+		left: 0px;
+	}
+	.motion_print{
+		display: block;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		height: 150px;
+		width: 200px;
+	}
+	.pic6{
+		display: inline-block;
+		width: 200px;
+		height: 150px;
+		background-image: 200px 150px;
+	}
+	.contactt{
+		display: block;
+		position: absolute;
+		width: 200px;
+		height: 150px;
+		top: 222px;
+		left: 0px;
+	}
+
+	.middle3{
+		display: block;
+		position: absolute;
+		top: 500px;
+		left: 200px;
+		height: 300px;
+		width: 400px;
+	}
+	.pic7{
+		display: block;
+		background-color: #ffeed0;
+		width: 400px;
+		height: 300px;
+		background-position: center;
+		background-size: 361px 289px;
+	}
+
+	.right3{
+		display: block;
+		position: absolute;
+		top: 500px;
+		right: 0px;
+		width: 200px;
+		height: 300px;
+		overflow: hidden;
+	}
+ 	.txt7{
+ 		display: block;
+ 		width: 200px;
+ 		height: 150px;
+ 		position: absolute;
+ 		top: 24%;
+ 		left: 0px;
+ 	}
+ 	.clock{
+ 		display: block;
+ 		width: 300px;
+ 		height: 150px;
+ 		position: absolute;
+ 		top: 150px;
+ 		left: 25px;
+ 		border: solid 0px red;
+ 	}
+
+}
+
+@media screen and (min-width:1100px){
+
+
+	.main{
+		background-color: #eee;
+	}
+
+	.allmight{
+		display: inline-block;
+		width: 1000px;
+		height: 1000px;
+		position: relative;
+		align-self: center;
+		background-color: #fff;
+	}
+
+	.txt{
+		display: none;
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		text-align: center;
+		align-self: center;
+		vertical-align: middle;
+		font-size: 1.2em;
+		font-weight: bolder;
+		overflow: hidden;
+	}
+
+	.pic{
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	.left1{
+		display: block;
+		position: absolute;
+		height: 340px;
+		width: 250px;
+		top: 0px;
+		left: 0px;
+	}
+	.pic1{
+		display: block;
+		width: 250px;
+		height: 340px;
+		background-size: 250px 334px;
+		background-color: #ffeed0;
+	}
+
+	.middle1{
+		display: block;
+		overflow: hidden;
+		position: absolute;
+		height: 340px;
+		width: 500px;
+		top: 0px;
+		left: 250px;
+	}
+	.pic2{
+		display: block;
+		width: 500px;
+		height: 340px;
+		background-color: #fff;
+		background-size: 400px 138px;
+		background-position: center;
+	}
+
+	.right1{
+		display: block;
+		overflow: hidden;
+		position: absolute;
+		height: 340px;
+		width: 250px;
+		top: 0px;
+		right: 0px;
+	}
+	.pic3{
+		display: block;
+		width: 250px;
+		height: 250px;
+		background-color: #ff6633;
+		background-size: 250px 250px;
+	}
+	.about{
+		height: 90px;
+		width: 250px;
+		vertical-align: middle;
+		overflow: hidden;
+		position: absolute;
+		top: 280px;
+		right: 0px;
+	}
+
+	.left2{
+		display: inline-block;
+		height: 250px;
+		width: 250px;
+		position: absolute;
+		top: 340px;
+		left: 0px;
+		padding: auto;
+	}
+	.smaller{
+		font-size: 1em;
+		font-weight: normal;
+		height: 50%;
+	}
+
+	.middle2{
+		display: block;
+		position: absolute;
+		top: 340px;
+		left: 250px;
+		height: 250px;
+		width: 500px;
+	}
+	
+	.public_awards{
+		display: block;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		height: 250px;
+		width: 250px;
+	}
+	.pic4{
+		display: block;
+		width: 250px;
+		height: 250px;
+		background-position: center;
+		background-size: 250px 250px;
+	}
+	.Services{
+		display: block;
+		width: 250px;
+		height: 250px;
+		position: absolute;
+		left: 250px;
+	}
+
+	.right2{
+		display: block;
+		position: absolute;
+		width: 250px;
+		height: 250px;
+		top: 340px;
+		right: 0px;
+	}
+	.pic5{
+		display: block;
+		width: 250px;
+		height: 250px;
+		background-position: center;
+		background-size: 250px 250px;
+	}
+
+	.left3{
+		display: block;
+		width: 250px;
+		height: 400px;
+		position: absolute;
+		top: 590px;
+		left: 0px;
+		overflow: hidden;
+	}
+	.motion_print{
+		display: block;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		height: 200px;
+		width: 250px;
+	}
+	.pic6{
+		display: inline-block;
+		width: 250px;
+		height: 200px;
+		background-image: 250px 190px;
+		background-position: center;
+	}
+	.contactt{
+		display: block;
+		position: absolute;
+		width: 250px;
+		height: 200px;
+		top: 300px;
+		left: 0px;
+	}
+
+	.middle3{
+		display: block;
+		position: absolute;
+		top: 590px;
+		left: 250px;
+		height: 400px;
+		width: 500px;
+	}
+	.pic7{
+		display: block;
+		background-color: #ffeed0;
+		width: 500px;
+		height: 400px;
+		background-position: center;
+		background-size: 361px 289px;
+	}
+
+	.right3{
+		display: block;
+		position: absolute;
+		top: 590px;
+		right: 0px;
+		width: 250px;
+		height: 400px;
+		overflow: hidden;
+	}
+ 	.txt7{
+ 		display: block;
+ 		width: 250px;
+ 		height: 200px;
+ 		position: absolute;
+ 		top: 24%;
+ 		left: 0px;
+ 	}
+ 	.clock{
+ 		display: block;
+ 		width: 400px;
+ 		height: 200px;
+ 		position: absolute;
+ 		top: 200px;
+ 		left: 25px;
+ 		border: solid 0px red;
+ 	}
+
+}
+
+.smaller{
+	height: 100%;
+}

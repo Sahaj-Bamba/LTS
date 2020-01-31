@@ -1,7 +1,69 @@
 
+@media screen and (min-height: 700px){
+
+#spinload{
+	height: 800px; 
+	width: 100%; 
+	z-index: 1000; 
+	background-color: #eee; 
+	display: block;
+}
+
+.gif{
+	height: auto; 
+	width: 150px; 
+	text-align: center; 
+	vertical-align: center; 
+	background-image: url('spin.gif'); 
+	background-repeat: no-repeat;
+	background-size: auto; 
+	background-position: center;
+}
+}
+@media screen and (max-height: 500px){
+
+#spinload{
+	height: 700px; 
+	width: 100%; 
+	z-index: 1000; 
+	background-color: #eee; 
+	display: block;
+}
+
+.gif{
+	height: 150px; 
+	width: 150px; 
+	text-align: center; 
+	vertical-align: center; 
+	background-image: url('spin.gif'); 
+	background-repeat: no-repeat;
+	background-size: auto; 
+	background-position: center;
+}
+}
 
 
-@media screen and (min-width: 502px){
+@media screen and (min-width: 670px){
+
+
+#spinload{
+	height: 800px; 
+	width: 100%; 
+	z-index: 1000; 
+	background-color: #eee; 
+	display: block;
+}
+
+.gif{
+	height: 150px; 
+	width: 100px; 
+	text-align: center; 
+	vertical-align: center; 
+	background-image: url('spin.gif'); 
+	background-repeat: no-repeat;
+	background-size: auto; 
+	background-position: center;
+}
 
 .tag{
 	height: 100%; width: 3%;display: inline-block;
@@ -49,14 +111,31 @@
 
 }
 
-@media screen and (orientation:landscape) and (max-height: 501) {
 
+
+
+
+
+@media (max-width: 671px) {
+
+#spinload{
+	height: 500px; 
+	width: 100%; 
+	z-index: 1000; 
+	background-color: #eee; 
+	display: block;
 }
 
-
-
-
-@media (max-width: 501px) and (orientation:portrait){
+.gif{
+	height: 100px; 
+	width: auto; 
+	text-align: center; 
+	vertical-align: center; 
+	background-image: url('spin.gif'); 
+	background-repeat: no-repeat;
+	background-size: 100% 100%; 
+	background-position: center;
+}
 
 .tag{
 	height: 75%; width: 5%; display: inline-block;
@@ -75,13 +154,21 @@
 	font-size: 1em;
 }
 
+.txte{
+	height: 100%;
+	width: 80%;
+	position: absolute;
+	left: 0%;
+	font-size: 1em;
+}
+
 .footer{
 	position: fixed; bottom: 0%; left: 0%; height: 5%; display: block; border: solid 0px blue; width: 100%; background-color: #f3f3f3; z-index: 5;
 	font-size: 0.75em;
 }
 
 .main{
-	position: fixed; height: 90%; width: 98%; left: 1%; top: 5%; 
+	position: fixed; height: 90%; width: 100%; left: 0%; top: 5%; 
 	display: block; border: solid 0px black; z-index: 3;
 	overflow: auto; 
 }

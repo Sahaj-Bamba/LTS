@@ -1,6 +1,5 @@
 # LTS
 Listen Think Shout website
 
-A website for LTS .
+Starting file home.html
 
-## Website Link : https://ltsss.000webhostapp.com/index.html
