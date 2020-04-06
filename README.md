@@ -3,7 +3,7 @@ Listen Think Shout website
 
 
 
-A basic front end website.
+A basic front end website designed to learn frontend skills.
 
-Hosted Link https://ltsss.000webhostapp.com/index.html
+Hosted Link https:lts.sahajbamba.me
 
